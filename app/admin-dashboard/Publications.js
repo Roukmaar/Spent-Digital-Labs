@@ -81,26 +81,26 @@ export default function Publications() {
                 >
                 <FontAwesomeIcon icon={faFileText} className="w-6 h-6 text-teal-600" />
 
-                  <span className="text-xs text-center">New Publication</span>
+                  <span className="text-xs text-center text-black">New Publication</span>
                 </button>
                 <button 
                   className="bg-slate-100 h-25.5 flex flex-col gap-2 hover:bg-blue-100 items-center justify-center border-2 border-dotted border-gray-200 rounded-lg"
                 >
                 <FontAwesomeIcon icon={faCode} className="w-6 h-6 text-blue-600" />
 
-                  <span className="text-xs text-center">Add Project</span>
+                  <span className="text-xs text-center text-black">Add Project</span>
                 </button>
                 <button 
                   className="bg-slate-100 h-25.5 flex flex-col gap-2 hover:bg-purple-100 items-center justify-center border-2 border-dotted border-gray-200 rounded-lg"
                 >
                 <FontAwesomeIcon icon={faCalendar} className="w-6 h-6 text-purple-600" />
-                  <span className="text-xs text-center">Create Event</span>
+                  <span className="text-xs text-center text-black">Create Event</span>
                 </button>
                 <button 
                   className="bg-slate-100 h-25.5 flex flex-col gap-2 hover:bg-amber-100 items-center justify-center border-2 border-dotted border-gray-200 rounded-lg"
                 >
                 <FontAwesomeIcon icon={faUsers} className="w-6 h-6 text-amber-600" />
-                  <span className="text-xs text-center text-">Add Team Member</span>
+                  <span className="text-xs text-center text-black">Add Team Member</span>
                 </button>
             </div>
             

@@ -15,7 +15,7 @@ export default function Content() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 hover:cursor-pointer w-full">
           <div className="col-span-2 bg-white p-6 rounded-lg shadow-sm">
-            <h2 className="text-lg font-semibold mb-4">Calendar</h2>
+            <h2 className="text-lg font-semibold mb-4 text-black">Calendar</h2>
             <div className="grid grid-cols-7 text-center text-gray-600 text-sm gap-5">
               <div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div>
               <div className="text-gray-300">27</div><div className="text-gray-300">28</div><div>29</div><div>30</div><div>31</div><div>1</div><div>2</div>
@@ -28,12 +28,12 @@ export default function Content() {
 
           <div className="space-y-6">
             <div className="bg-white p-4 rounded-lg shadow-sm">
-              <h3 className="font-bold text-lg">November 13, 2025</h3>
+              <h3 className="font-bold text-lg text-black">November 13, 2025</h3>
               <p className="text-gray-500 text-sm mt-2">No events scheduled for this day</p>
             </div>
 
             <div className="bg-white p-4 rounded-lg shadow-sm">
-              <h3 className="font-bold text-lg mb-3">Upcoming Events</h3>
+              <h3 className="font-bold text-lg mb-3 text-black">Upcoming Events</h3>
               <div className="text-sm space-y-4">
                 <div>
                   <p className="text-gray-800 font-semibold">Blockchain Security Lecture</p>

@@ -35,20 +35,20 @@ export default function QuickActions() {
                 <button 
                   className="px-3 bg-amber-100 w-full h-12 flex gap-2 justify-between items-center rounded-lg"
                 >
-                  <div className='flex  space-x-2'>
-                <FontAwesomeIcon icon={faFileText} className="w-4 h-4 text-amber-600" />
+                  <div className='flex  space-x-2 items-center'>
+                <FontAwesomeIcon icon={faFileText} className="size-5 text-amber-600" />
 
-                  <span className="text-sm text-center">3 New Publications</span>
+                  <span className="text-sm text-center text-black">3 New Publications</span>
                   </div>
                   <a className='text-sm text-blue-500 hover:underline hover:cursor-pointer'>Review</a>
                 </button>
                 <button 
                   className="px-3 bg-blue-100 w-full h-12 flex gap-2 justify-between items-center rounded-lg"
                 >
-                  <div className='flex  space-x-2'>
-                <FontAwesomeIcon icon={faHandshake} className="w-4 h-4 text-blue-600" />
+                  <div className='flex  space-x-2 items-center'>
+                <FontAwesomeIcon icon={faHandshake} className="size-6 text-blue-600" />
 
-                  <span className="text-sm text-center">5 Partnership Requests</span>
+                  <span className="text-sm text-center text-black">5 Partnership Requests</span>
                   </div>
                   <a className='text-sm text-blue-500 hover:underline hover:cursor-pointer'>Review</a>
                 </button>
@@ -69,7 +69,7 @@ export default function QuickActions() {
                   className="px-3 bg-purple-100 w-full h-12 flex gap-2 justify-between items-center rounded-lg"
                 >
                   <div className='flex  space-x-2'>
-                  <span className="text-sm text-center">Contact Forms</span>
+                  <span className="text-sm text-center text-black">Contact Forms</span>
                   </div>
                   <a className='text-sm text-purple-500 hover:underline hover:cursor-pointer'>4 new</a>
                 </button>
@@ -77,7 +77,7 @@ export default function QuickActions() {
                   className="px-3 bg-cyan-100 w-full h-12 flex gap-2 justify-between items-center rounded-lg"
                 >
                   <div className='flex  space-x-2'>
-                  <span className="text-sm text-center">App Engagement</span>
+                  <span className="text-sm text-center text-black">App Engagement</span>
                   </div>
                   <a className='text-sm text-cyan-500 hover:underline hover:cursor-pointer'>6 new</a>
                 </button>
@@ -96,11 +96,11 @@ export default function QuickActions() {
                 <button className="px-3 w-full flex gap-2 justify-between items-center rounded-lg">
                   <div className='flex  space-x-2 items-center'>
                     <FontAwesomeIcon icon={faDatabase} className="w-3 h-3 text-teal-600" />
-                    <span className="text-sm text-center">Database</span>
+                    <span className="text-sm text-center text-black">Database</span>
                   </div>
                   <div className='flex justify-center items-center space-x-2'>
                     <span className='w-2 h-2 rounded-full bg-green-500'></span>
-                    <h2 className='text-sm text-green-500'>Online</h2>
+                    <h2 className='text-sm text-green-500 '>Online</h2>
                   </div>
                 </button>
 
@@ -108,7 +108,7 @@ export default function QuickActions() {
                 <button className="px-3 w-full flex gap-2 justify-between items-center rounded-lg">
                   <div className='flex  space-x-2 items-center'>
                     <FontAwesomeIcon icon={faPlug} className="w-3 h-3 text-teal-600" />
-                    <span className="text-sm text-center">API Status</span>
+                    <span className="text-sm text-center text-black">API Status</span>
                   </div>
                   <div className='flex justify-center items-center space-x-2'>
                     <span className='w-2 h-2 rounded-full bg-green-500'></span>
@@ -120,7 +120,7 @@ export default function QuickActions() {
                 <button className="px-3 w-full flex gap-2 justify-between items-center rounded-lg">
                   <div className='flex  space-x-2 items-center'>
                     <FontAwesomeIcon icon={faHdd} className="w-3 h-3 text-teal-600" /> 
-                    <span className="text-sm text-center">Storage</span>
+                    <span className="text-sm text-center text-black">Storage</span>
                   </div>
                   <div className='flex justify-center items-center space-x-2'>
                     <span className='w-2 h-2 rounded-full bg-amber-500'></span>
@@ -132,11 +132,11 @@ export default function QuickActions() {
                 <button className="px-3 w-full flex gap-2 justify-between items-center rounded-lg">
                   <div className='flex  space-x-2 items-center'>
                     <FontAwesomeIcon icon={faCloudUpload} className="w-3 h-3 text-teal-600" />
-                    <span className="text-sm text-center">Last Backup</span>
+                    <span className="text-sm text-center text-black">Last Backup</span>
                   </div>
                   <div className='flex justify-center items-center space-x-2'>
                     <span className='w-2 h-2 rounded-full'></span>
-                    <h2 className='text-sm'>2 hours ago</h2>
+                    <h2 className='text-sm text-black'>2 hours ago</h2>
                   </div>
                 </button>
             </div>

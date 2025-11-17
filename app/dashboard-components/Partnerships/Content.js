@@ -1,23 +1,26 @@
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
+import { faCheckDouble } from "@fortawesome/free-solid-svg-icons";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 export default function Content() {
   return (
-    <section className="w-full">
+    <section className="">
       <div className="min-h-screen px-3">
         <div className="flex justify-between items-center mb-4">
-          <h1 className="text-xl font-bold">Partnership Inquiries</h1>
+          <h1 className="text-xl font-bold text-black">Partnership Inquiries</h1>
         </div>
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-2 md:space-y-0 mb-4">
           <input
             type="text"
             placeholder="Search by organization, name, or email..."
-            className="w-full md:w-2/3 px-4 py-2 border rounded-lg shadow-sm focus:outline-none mb-2 md:mb-0"
+            className="px-3 border border-gray-300 rounded-md focus:outline-none placeholder:text-gray-400 w-full md:w-2/3 py-2 focus:outline-blue-800 cursor-pointer hover:outline-blue-800 mb-2 md:mb-0"
           />
-          <select className="w-full md:w-1/4 px-4 py-2 border rounded-lg shadow-sm focus:outline-none">
-            <option>All Status</option>
+          <select className="text-black w-full md:w-1/4 px-4 py-2 border rounded-lg shadow-sm focus:outline-none">
+            <option className="text-black">All Status</option>
             <option>New</option>
             <option>Under Review</option>
             <option>Accepted</option>
@@ -25,13 +28,13 @@ export default function Content() {
         </div>
 
         <div className="rounded-xl p-4">
-          <h2 className="font-semibold text-lg mb-4">All Inquiries (5)</h2>
+          <h2 className="font-semibold text-lg text-black mb-4">All Inquiries (5)</h2>
           {/* Mobile: show cards */}
           <div className="md:hidden space-y-4">
             <div className="bg-white rounded-xl shadow p-4">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="font-semibold">Tech Innovations Inc.</h3>
+                  <h3 className="font-semibold text-black">Tech Innovations Inc.</h3>
                   <p className="text-sm text-gray-600">
                     Research Collaboration
                   </p>
@@ -52,17 +55,20 @@ export default function Content() {
                 </div>
               </div>
               <div className="mt-3 flex gap-3 text-sm">
-                <FontAwesomeIcon
-                  icon={faTrashAlt}
-                  className="size-4 text-red-600 hover:text-red-400 hover:cursor-pointer"
-                />{" "}
+                    <FontAwesomeIcon icon={faCheckDouble}
+                      className="w-4 h-4 text-green-600 hover:text-green-400 cursor-pointer inline-block"
+                      />
+                    <FontAwesomeIcon
+                      icon={faTrashAlt}
+                      className="w-4 h-4 text-red-600 hover:text-red-400 cursor-pointer inline-block"
+                    />   
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow p-4">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="font-semibold">GreenTech Partners</h3>
+                  <h3 className="font-semibold text-black">GreenTech Partners</h3>
                   <p className="text-sm text-gray-600">
                     Sustainability Partnership
                   </p>
@@ -81,17 +87,20 @@ export default function Content() {
                 </div>
               </div>
               <div className="mt-3 flex gap-3 text-sm">
-                <FontAwesomeIcon
-                  icon={faTrashAlt}
-                  className="size-4 text-red-600 hover:text-red-400 hover:cursor-pointer"
-                />
+                    <FontAwesomeIcon icon={faCheckDouble}
+                      className="w-4 h-4 text-green-600 hover:text-green-400 cursor-pointer inline-block"
+                      />
+                    <FontAwesomeIcon
+                      icon={faTrashAlt}
+                      className="w-4 h-4 text-red-600 hover:text-red-400 cursor-pointer inline-block"
+                    />   
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow p-4">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="font-semibold">Health Alliance</h3>
+                  <h3 className="font-semibold text-black">Health Alliance</h3>
                   <p className="text-sm text-gray-600">Program Partnership</p>
                   <p className="text-xs text-gray-500 mt-2">
                     Dr. Samuel Park •{" "}
@@ -110,17 +119,20 @@ export default function Content() {
                 </div>
               </div>
               <div className="mt-3 flex gap-3 text-sm">
-                <FontAwesomeIcon
-                  icon={faTrashAlt}
-                  className="size-4 text-red-600 hover:text-red-400 hover:cursor-pointer"
-                />
+                    <FontAwesomeIcon icon={faCheckDouble}
+                      className="w-4 h-4 text-green-600 hover:text-green-400 cursor-pointer inline-block"
+                      />
+                    <FontAwesomeIcon
+                      icon={faTrashAlt}
+                      className="w-4 h-4 text-red-600 hover:text-red-400 cursor-pointer inline-block"
+                    />   
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow p-4">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="font-semibold">Global Solutions Ltd</h3>
+                  <h3 className="font-semibold text-black">Global Solutions Ltd</h3>
                   <p className="text-sm text-gray-600">Funding Partnership</p>
                   <p className="text-xs text-gray-500 mt-2">
                     Bob Martinez •{" "}
@@ -139,17 +151,20 @@ export default function Content() {
                 </div>
               </div>
               <div className="mt-3 flex gap-3 text-sm">
-                <FontAwesomeIcon
-                  icon={faTrashAlt}
-                  className="size-4 text-red-600 hover:text-red-400 hover:cursor-pointer"
-                />
+                    <FontAwesomeIcon icon={faCheckDouble}
+                      className="w-4 h-4 text-green-600 hover:text-green-400 cursor-pointer inline-block"
+                      />
+                    <FontAwesomeIcon
+                      icon={faTrashAlt}
+                      className="w-4 h-4 text-red-600 hover:text-red-400 cursor-pointer inline-block"
+                    />   
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow p-4">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="font-semibold">Education First</h3>
+                  <h3 className="font-semibold text-black">Education First</h3>
                   <p className="text-sm text-gray-600">Academic Partnership</p>
                   <p className="text-xs text-gray-500 mt-2">
                     Carol Zhang •{" "}
@@ -167,11 +182,15 @@ export default function Content() {
                   <div className="text-xs text-gray-500">1/10/2024</div>
                 </div>
               </div>
-              <div className="mt-3 flex gap-3 text-sm">
-                <FontAwesomeIcon
-                  icon={faTrashAlt}
-                  className="size-4 text-red-600 hover:text-red-400 hover:cursor-pointer"
-                />
+            
+                <div className="mt-3 flex gap-3 text-sm">
+                    <FontAwesomeIcon icon={faCheckDouble}
+                      className="w-4 h-4 text-green-600 hover:text-green-400 cursor-pointer inline-block"
+                      />
+                    <FontAwesomeIcon
+                      icon={faTrashAlt}
+                      className="w-4 h-4 text-red-600 hover:text-red-400 cursor-pointer inline-block"
+                    />   
               </div>
             </div>
           </div>
@@ -224,11 +243,15 @@ export default function Content() {
                   <td className="hidden md:table-cell text-center align-middle">
                     1/15/2024
                   </td>
-                  <td className="hidden md:table-cell text-center align-middle">
+                  <td className="hidden md:table-cell text-center align-middle space-x-3">
+                    <FontAwesomeIcon icon={faCheckDouble}
+                      className="w-4 h-4 text-green-600 hover:text-green-400 cursor-pointer inline-block"
+                      />
                     <FontAwesomeIcon
                       icon={faTrashAlt}
                       className="w-4 h-4 text-red-600 hover:text-red-400 cursor-pointer inline-block"
                     />
+                    
                   </td>
                 </tr>
                 <tr className="border-b">
@@ -252,11 +275,15 @@ export default function Content() {
                   <td className="hidden md:table-cell text-center align-middle">
                     1/12/2024
                   </td>
-                  <td className="hidden md:table-cell text-center align-middle">
+                  <td className="hidden md:table-cell text-center align-middle space-x-3">
+                    <FontAwesomeIcon icon={faCheckDouble}
+                      className="w-4 h-4 text-green-600 hover:text-green-400 cursor-pointer inline-block"
+                      />
                     <FontAwesomeIcon
                       icon={faTrashAlt}
                       className="w-4 h-4 text-red-600 hover:text-red-400 cursor-pointer inline-block"
                     />
+                    
                   </td>
                 </tr>
                 <tr className="border-b">
@@ -279,11 +306,15 @@ export default function Content() {
                   <td className="hidden md:table-cell text-center align-middle">
                     1/10/2024
                   </td>
-                  <td className="hidden md:table-cell text-center align-middle">
+                  <td className="hidden md:table-cell text-center align-middle space-x-3">
+                    <FontAwesomeIcon icon={faCheckDouble}
+                      className="w-4 h-4 text-green-600 hover:text-green-400 cursor-pointer inline-block"
+                      />
                     <FontAwesomeIcon
                       icon={faTrashAlt}
                       className="w-4 h-4 text-red-600 hover:text-red-400 cursor-pointer inline-block"
                     />
+                    
                   </td>
                 </tr>
                 <tr className="border-b">
@@ -308,11 +339,15 @@ export default function Content() {
                   <td className="hidden md:table-cell text-center align-middle">
                     2/02/2024
                   </td>
-                  <td className="hidden md:table-cell text-center align-middle">
+                  <td className="hidden md:table-cell text-center align-middle space-x-3">
+                    <FontAwesomeIcon icon={faCheckDouble}
+                      className="w-4 h-4 text-green-600 hover:text-green-400 cursor-pointer inline-block"
+                      />
                     <FontAwesomeIcon
                       icon={faTrashAlt}
                       className="w-4 h-4 text-red-600 hover:text-red-400 cursor-pointer inline-block"
                     />
+                    
                   </td>
                 </tr>
                 <tr>
@@ -335,11 +370,15 @@ export default function Content() {
                   <td className="hidden md:table-cell text-center align-middle">
                     2/01/2024
                   </td>
-                  <td className="hidden md:table-cell text-center align-middle">
+                 <td className="hidden md:table-cell text-center align-middle space-x-3">
+                    <FontAwesomeIcon icon={faCheckDouble}
+                      className="w-4 h-4 text-green-600 hover:text-green-400 cursor-pointer inline-block"
+                      />
                     <FontAwesomeIcon
                       icon={faTrashAlt}
                       className="w-4 h-4 text-red-600 hover:text-red-400 cursor-pointer inline-block"
                     />
+                    
                   </td>
                 </tr>
               </tbody>

@@ -21,7 +21,7 @@ export default function Content() {
 
       {/* Profile Information */}
       <div className="bg-white rounded-xl shadow p-6">
-        <h2 className="text-xl font-bold mb-1">Profile Information</h2>
+        <h2 className="text-xl font-bold text-black mb-1">Profile Information</h2>
         <p className="text-gray-600 mb-4">Update your profile details and personal information</p>
 
         {/* Profile photo */}
@@ -30,7 +30,7 @@ export default function Content() {
             SP
           </div>
           <div className="flex gap-2 cursor-pointer ">
-            <button className="hover:bg-gray-200 px-4 py-2 border rounded-md flex items-center gap-2 text-sm">
+            <button className="hover:bg-gray-200 text-black px-4 py-2 border rounded-md flex items-center gap-2 text-sm">
               <FontAwesomeIcon icon={faUpload} className='size-4 text-teal-500'/> Upload Photo
             </button>
             <button className="text-red-500 text-sm cursor-pointer hover:bg-red-400 hover:text-white p-2 rounded-md">Remove</button>
@@ -41,20 +41,20 @@ export default function Content() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-            <input type="text" defaultValue="Spirit Phillips" className="w-full border rounded-md px-3 py-2" />
+            <input type="text" placeholder="Current PasswordSpirit Phillips" className="w-full border rounded-md px-3 py-2 placeholder:text-gray-300" />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-            <input type="email" defaultValue="@spenddigitallab.com" className="w-full border rounded-md px-3 py-2 focus:outline-none" />
+            <input type="email" placeholder="Current Password@spenddigitallab.com" className="w-full border rounded-md px-3 py-2 placeholder:text-gray-300 focus:outline-none" />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-            <input type="text-area" defaultValue="+1 234 567 8900" className="w-full border rounded-md px-3 py-2 focus:outline-none" />
+            <input type="text-area" placeholder="Current Password+1 234 567 8900" className="w-full border rounded-md px-3 py-2 placeholder:text-gray-300 focus:outline-none" />
           </div>
         </div>
 <div className="mb-6">
           <label className="block text-sm font-medium text-gray-700 mb-1">Bio</label>
-          <textarea type="text" defaultValue="Managing the Spent Digital Lab admin dashboard" className="w-full border rounded-md px-3 py-2 focus:outline-none " />
+          <textarea type="text" placeholder="Current PasswordMember at Spent Digital Labs" className="w-full border rounded-md px-3 py-2 focus:outline-none placeholder:text-gray-300" />
         </div>
         <button className="bg-teal-600 hover:bg-teal-700 cursor-pointer text-white px-6 py-2 rounded-md">
           Save Changes
@@ -75,15 +75,15 @@ export default function Content() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Current Password</label>
-            <input type="password" defaultValue="" className="w-full border rounded-md px-3 py-2 focus:outline-none " />
+            <input type="password" placeholder="Current Password" className="w-full border rounded-md px-3 py-2 focus:outline-none placeholder:text-gray-300 " />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">New Password</label>
-            <input type="password" defaultValue="" className="w-full border rounded-md px-3 py-2 focus:outline-none " />
+            <input type="password" placeholder="New Password" className="w-full border rounded-md px-3 py-2 focus:outline-none placeholder:text-gray-300 " />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Confirm New Password</label>
-            <input type="password" defaultValue="" className="w-full border rounded-md px-3 py-2 focus:outline-none " />
+            <input type="password" placeholder="Confirm New Password" className="w-full border rounded-md px-3 py-2 focus:outline-none placeholder:text-gray-300 " />
           </div>
       </div>
       

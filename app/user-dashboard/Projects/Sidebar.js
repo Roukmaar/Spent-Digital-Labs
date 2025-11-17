@@ -47,7 +47,7 @@ export default function Sidebar() {
                             {" "}
                             <FontAwesomeIcon
                                 icon={faChartLine}
-                                className="w-5 h-5 ml-1 md:ml-0"
+                                className="w-5 h-5 ml-1 md:ml-0 text-black "
                             />
                             <span className="font-medium hidden md:flex">Dashboard</span>
                         </button>
@@ -56,14 +56,14 @@ export default function Sidebar() {
                         <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
                             <FontAwesomeIcon
                                 icon={faFileText}
-                                className="w-5 h-5 ml-1 md:ml-0"
+                                className="w-5 h-5 ml-1 md:ml-0 text-black "
                             />
                             <span className="font-medium hidden md:flex">Publications</span>
                         </button>
                     </Link>
                     <Link href="/user-dashboard/Projects">
                         <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 bg-cyan-50 mt-8">
-                            <FontAwesomeIcon icon={faCode} className="w-5 h-5 ml-1 md:ml-0" />
+                            <FontAwesomeIcon icon={faCode} className=" text-black w-5 h-5 ml-1 md:ml-0" />
                             <span className="font-medium hidden md:flex">Projects</span>
                         </button>
                     </Link>
@@ -71,7 +71,7 @@ export default function Sidebar() {
                         <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
                             <FontAwesomeIcon
                                 icon={faCalendar}
-                                className="w-5 h-5 ml-1 md:ml-0"
+                                className="w-5 h-5 ml-1 md:ml-0 text-black "
                             />
                             <span className="font-medium hidden md:flex">Events</span>
                         </button>
@@ -80,7 +80,7 @@ export default function Sidebar() {
                     <Link href="/user-dashboard/Settingss">
                         <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
                             {" "}
-                            <FontAwesomeIcon icon={faUser} className="w-5 h-5 ml-1 md:ml-0" />
+                            <FontAwesomeIcon icon={faUser} className=" text-black w-5 h-5 ml-1 md:ml-0" />
                             <span className="font-medium hidden md:flex">Profile</span>
                         </button>
                     </Link>

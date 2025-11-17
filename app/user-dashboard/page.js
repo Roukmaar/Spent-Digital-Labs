@@ -54,31 +54,31 @@ export default function userdashboard() {
         <nav className="flex flex-col px-0.5 md:px-0 mt-12">
             <Link href="/user-dashboard">
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 bg-cyan-50 mt-8"         >
-                <FontAwesomeIcon icon={faChartLine} className="w-5 h-5 ml-1 md:ml-0" />
+                <FontAwesomeIcon icon={faChartLine} className="w-5 h-5 ml-1 md:ml-0 text-black" />
                 <span className="font-medium hidden md:flex">Dashboard</span>
             </button>
             </Link>
             <Link href="/user-dashboard/Publications">
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
-                <FontAwesomeIcon icon={faFileText} className="w-5 h-5 ml-1 md:ml-0" />
+                <FontAwesomeIcon icon={faFileText} className="w-5 h-5 ml-1 md:ml-0 text-black font" />
                 <span className="font-medium hidden md:flex">Publications</span>
             </button>
             </Link>
             <Link href="/user-dashboard/Projects">
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
-                <FontAwesomeIcon icon={faCode} className="w-5 h-5 ml-1 md:ml-0" />
+                <FontAwesomeIcon icon={faCode} className="w-5 h-5 ml-1 md:ml-0 text-black" />
                 <span className="font-medium hidden md:flex">Projects</span>
             </button>
             </Link>
             <Link href="/user-dashboard/Eventss">
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
-                <FontAwesomeIcon icon={faCalendar} className="w-5 h-5 ml-1 md:ml-0" />
+                <FontAwesomeIcon icon={faCalendar} className="w-5 h-5 ml-1 md:ml-0 text-black font" />
                 <span className="font-medium hidden md:flex">Events</span>
             </button>
             </Link>
             <Link href="/user-dashboard/Settingss">
             <button className="w-full flex items-center gap-3 px-6 py-3 text-left hover:text-teal-600 hover:bg-cyan-50 mt-8">
-                <FontAwesomeIcon icon={faUser} className="w-5 h-5 ml-1 md:ml-0" />
+                <FontAwesomeIcon icon={faUser} className="w-5 h-5 ml-1 md:ml-0 text-black font" />
                 <span className="font-medium hidden md:flex">Profile</span>
             </button>
             </Link>

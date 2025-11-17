@@ -7,8 +7,8 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Content() {
   return (
-    <section className="w-full">
-      <div className="p-6 min-h-screen w-full">
+    <section className="">
+      <div className="p-3 min-h-screen w-full">
         <div className="md:flex space-y-2 justify-between items-center mb-6">
           <div>
             <p className="text-gray-500 text-xl md:text-2xl">
@@ -23,10 +23,10 @@ export default function Content() {
         <input
           type="text"
           placeholder="Search members..."
-          className="w-full md:w-1/2 px-4 py-2 border rounded-lg shadow-sm focus:outline-none mb-6"
+          className="placeholder:text-gray-400 hidden md:flex w-full md:w-1/2 px-4 py-2 border rounded-lg shadow-sm focus:outline-none mb-6"
         />
         <div className="space-y-5 border border-blue-700 rounded-lg p-3">
-          <p className="font-semibold text-2xl md:text-3xl">Team Marble</p>
+          <p className="font-semibold text-2xl md:text-3xl text-black">Team Marble</p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
             <div className="bg-white p-4 rounded-xl shadow">
               <div className="flex items-center mb-4 justify-between">
@@ -35,7 +35,7 @@ export default function Content() {
                     AA
                   </div>
                   <div>
-                    <h2 className="font-bold">Alexander Akosile O.</h2>
+                    <h2 className="font-bold text-black">Alexander Akosile O.</h2>
                     <p className="text-sm text-blue-600">Team Leader</p>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ export default function Content() {
                     AP
                   </div>
                   <div>
-                    <h2 className="font-bold">Adeogun Praise E.</h2>
+                    <h2 className="font-bold text-black">Adeogun Praise E.</h2>
                     <p className="text-sm text-blue-600">Member</p>
                   </div>
                 </div>
@@ -111,9 +111,8 @@ export default function Content() {
                 </span>
               </div>
               <p className="text-sm text-gray-600 mb-4">
-                Ensures data integrity, security, and performance.
+                Ensures data integrity, security, and performance.</p>
                 <hr className="my-4 border-gray-300" />
-              </p>
               <div className="text-sm text-gray-600 space-y-1">
                 <p className="flex gap-1.5 items-center">
                   <FontAwesomeIcon
@@ -141,7 +140,7 @@ export default function Content() {
                     SO
                   </div>
                   <div>
-                    <h2 className="font-bold">Samuel Okpokam D.</h2>
+                    <h2 className="font-bold text-black">Samuel Okpokam D.</h2>
                     <p className="text-sm text-blue-600">Member</p>
                   </div>
                 </div>
@@ -193,7 +192,7 @@ export default function Content() {
                     OH
                   </div>
                   <div>
-                    <h2 className="font-bold">Onatade Haliyah O.</h2>
+                    <h2 className="font-bold text-black">Onatade Haliyah O.</h2>
                     <p className="text-sm text-blue-600">Member</p>
                   </div>
                 </div>
@@ -247,7 +246,7 @@ export default function Content() {
                     MC
                   </div>
                   <div>
-                    <h2 className="font-bold">Olatunde U.Farouq</h2>
+                    <h2 className="font-bold text-black">Olatunde U.Farouq</h2>
                     <p className="text-sm text-blue-600">Member</p>
                   </div>
                 </div>

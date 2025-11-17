@@ -14,9 +14,9 @@ export default function Content() {
                     <input
                         type="text"
                         placeholder="Search by name, email, or subject..."
-                        className="w-full md:w-2/3 px-4 py-2 border rounded-lg shadow-sm focus:outline-none mb-2 md:mb-0"
+                        className=" placeholder:text-gray-400 w-full md:w-2/3 px-4 py-2 border rounded-lg shadow-sm focus:outline-none mb-2 md:mb-0"
                     />
-                    <select className="w-full md:w-1/4 px-4 py-2 border rounded-lg shadow-sm focus:outline-none">
+                    <select className="text-black w-full md:w-1/4 px-4 py-2 border rounded-lg shadow-sm focus:outline-none">
                         <option>All Status</option>
                         <option>New</option>
                         <option>Responded</option>
@@ -26,11 +26,11 @@ export default function Content() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
                     {/* Card 1 */}
                     <div className="bg-white rounded-lg shadow p-4">
-                        <div className="text-lg font-semibold">John Smith</div>
+                        <div className="text-lg font-semibold text-black">John Smith</div>
                         <div className="text-sm text-gray-500 mb-2">
                             john.smith@example.com
                         </div>
-                        <div className="mb-2">
+                        <div className="mb-2 text-black">
                             <strong>Subject:</strong> Inquiry about collaboration
                         </div>
                         <div className="flex items-center justify-between text-sm text-gray-600">
@@ -51,11 +51,11 @@ export default function Content() {
 
                     {/* Card 2 */}
                     <div className="bg-white rounded-lg shadow p-4">
-                        <div className="text-lg font-semibold">Sarah Johnson</div>
+                        <div className="text-lg font-semibold text-black">Sarah Johnson</div>
                         <div className="text-sm text-gray-500 mb-2">
                             sarah.j@example.com
                         </div>
-                        <div className="mb-2">
+                        <div className="mb-2 text-black">
                             <strong>Subject:</strong> Question about services
                         </div>
                         <div className="flex items-center justify-between text-sm text-gray-600">
@@ -76,9 +76,9 @@ export default function Content() {
 
                     {/* Card 3 */}
                     <div className="bg-white rounded-lg shadow p-4">
-                        <div className="text-lg font-semibold">Michael Chen</div>
+                        <div className="text-lg font-semibold text-black">Michael Chen</div>
                         <div className="text-sm text-gray-500 mb-2">m.chen@example.com</div>
-                        <div className="mb-2">
+                        <div className="mb-2 text-black">
                             <strong>Subject:</strong> General inquiry
                         </div>
                         <div className="flex items-center justify-between text-sm text-gray-600">

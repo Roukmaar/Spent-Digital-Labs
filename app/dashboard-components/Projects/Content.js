@@ -7,18 +7,24 @@ import React from 'react'
 export default function Content() {
   return (
     <section className='space-y-5 w-full px-4 sm:px-6'>
+        <div className="md:flex justify-between items-center space-y-3">
+                <div>
+                    <p className="text-gray-500 text-xl md:text-2xl">Manage your Projects</p>
+                </div>
+          <button className="bg-blue-950 cursor-pointer hover:bg-blue-900 text-white px-4 py-2 rounded-lg text-sm">+ Add Event</button>
+            </div>
 
         < div className='grid grid-cols-1 gap-6'>
             <div  className='border border-blue-500 p-4 rounded-xl shadow-sm'>
                 <div className='flex justify-between items-center mb-4'>
-                    <h2 className='font-bold text-lg'>Planning</h2>
-                    <span className='bg-gray-200 text-xs px-2 py-1 rounded-full'>2</span>
+                    <h2 className='font-bold text-lg text-black'>Planning</h2>
+                    <span className='bg-gray-200 text-xs px-2 py-1 border text-black rounded-full'>2</span>
                 </div>
 
                 <div className='space-y-4'>
                     <div className='bg-white p-4 rounded-xl shadow-sm'>
                     <div className='flex justify-between max-[900px]:flex-col max-[900px]:gap-2'>
-                        <h3 className='font-semibold text-sm'>Mobile App Development</h3>
+                        <h3 className='font-semibold text-sm text-black'>Mobile App Development</h3>
                         <span className='bg-yellow-400 w-15 md:w-fit text-white text-xs px-2 py-0.5 rounded-full'>medium</span>
                     </div>
                     <p className='text-sm text-gray-600 mt-1'>Create a cross-platform mobile application for data visualization</p>
@@ -35,7 +41,7 @@ export default function Content() {
                     <hr className='my-4 border-gray-300'/>
                     <div className='mt-4'>
                     <div className='flex justify-between max-[900px]:flex-col max-[900px]:gap-2'>
-                        <h3 className='font-semibold text-sm'>Website Redesign</h3>
+                        <h3 className='font-semibold text-sm text-black'>Website Redesign</h3>
                         <span className='bg-gray-200 w-9 md:w-fit text-gray-600 text-xs px-2 py-0.5 rounded-full'>low</span>
                     </div>
                     <p className='text-sm text-gray-600 mt-1'>Modernize the company website with new branding</p>
@@ -57,13 +63,13 @@ export default function Content() {
          {/* In Progress Column */}
         <div  className='border border-amber-500 p-4 rounded-xl shadow-sm'>
             <div className='flex justify-between items-center mb-4'>
-                <h2 className='font-bold text-lg'>In Progress</h2>
-                <span className='bg-gray-200 text-xs px-2 py-1 rounded-full'>1</span>
+                <h2 className='font-bold text-lg text-black'>In Progress</h2>
+                <span className='bg-gray-200 text-xs px-2 py-1 rounded-full text-black border'>1</span>
             </div>
 
             <div className='bg-white p-4 rounded-xl shadow-sm'>
                 <div className='flex justify-between max-[900px]:flex-col max-[900px]:gap-2'>
-                    <h3 className='font-semibold text-sm'>AI-Powered Analytics Platform</h3>
+                    <h3 className='font-semibold text-sm text-black'>AI-Powered Analytics Platform</h3>
                     <span className='bg-red-500 w-10 md:w-fit text-white text-xs px-2 py-0.5 rounded-full'>high</span>
                 </div>
                 <p className='text-sm text-gray-600 mt-1'>Develop a comprehensive analytics platform using machine learning</p>
@@ -83,13 +89,13 @@ export default function Content() {
          {/* Completed Column */}
         <div  className='border border-green-500 p-4 rounded-xl shadow-sm'>
             <div className='flex justify-between items-center mb-4'>
-                <h2 className='font-bold text-lg'>Completed</h2>
-                <span className='bg-gray-200 text-xs px-2 py-1 rounded-full'>1</span>
+                <h2 className='font-bold text-lg text-black'>Completed</h2>
+                <span className='bg-gray-200 text-xs px-2 py-1 rounded-full border text-black'>1</span>
             </div>
 
             <div className='bg-white p-4 rounded-xl shadow-sm'>
                 <div className='flex justify-between max-[900px]:flex-col max-[900px]:gap-2'>
-                    <h3 className='font-semibold text-sm'>Research Paper Publication</h3>
+                    <h3 className='font-semibold text-sm text-black'>Research Paper Publication</h3>
                     <span className='bg-red-500 w-10 md:w-fit text-white text-xs px-2 py-0.5 rounded-full'>high</span>
                 </div>
                 <p className='text-sm text-gray-600 mt-1'>Complete and publish research on digital transformation</p>
