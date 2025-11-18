@@ -171,7 +171,7 @@ export default function Content() {
               <div className="flex items-center mb-4 justify-between">
                 <div className="flex space-x-4">
                   <div className="bg-blue-200 text-blue-950 rounded-full h-12 w-12 flex items-center justify-center font-semibold">
-                    <Image src="/praise2.jpg" alt=""
+                    <Image src="/samuel.jpg" alt=""
                       width={10000000}
                       height={0}
                       className="rounded-full h-12 w-12" />
@@ -223,12 +223,12 @@ export default function Content() {
                   />{" "}
                   (+234) 81003 67291
                 </p>
-                <Link href="https://x.com/kaptal_alex?t=gFaKBZpDgfBcqc1F_ftw2A&s=08">
+                <Link href="https://x.com/isaac_newt27907?t=dVjor3SVbEU7sTU0Qy-v2w&s=08">
                   <p className="flex gap-1.5 items-center hover:underline ">
                     <FontAwesomeIcon
                       icon={faTwitter}
                       className="size-4 text-blue-900" />
-                    @kaptal_alex
+                    @isaac_newt27907
                   </p>
                 </Link>
               </div>
@@ -238,7 +238,7 @@ export default function Content() {
               <div className="flex items-center mb-4 justify-between">
                 <div className="flex space-x-4">
                   <div className="bg-blue-200 text-blue-950 rounded-full h-12 w-12 flex items-center justify-center font-semibold">
-                    <Image src="/praise2.jpg" alt=""
+                    <Image src="/haliyah.jpg" alt=""
                       width={10000000}
                       height={0}
                       className="rounded-full h-12 w-12" />
