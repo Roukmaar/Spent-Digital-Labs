@@ -13,7 +13,7 @@ export default function Content() {
       <p className="text-gray-600 mb-6">Manage your account settings and preferences</p>
 
       {/* Tabs */}
-      <div className="flex gap-4 mb-6">
+      <div className="md:flex space-y-3 gap-4 mb-6">
         <button className="px-4 py-2 rounded-lg bg-white shadow text-black flex items-center gap-2">
           <span><FontAwesomeIcon icon={faUserAlt} className='size-4 text-blue-900'/></span> Profile
         </button>
