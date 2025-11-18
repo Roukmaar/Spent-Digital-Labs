@@ -290,12 +290,12 @@ export default function Content() {
                 />{" "}
                 (+234) 91282 68359
               </p>
-              <Link href="https://x.com/kaptal_alex?t=gFaKBZpDgfBcqc1F_ftw2A&s=08">
+              <Link href="https://x.com/yemmiemotara?t=oHuT5pl-ib9rnkr0RpvmEw&s=08">
                 <p className="flex gap-1.5 items-center hover:underline ">
                   <FontAwesomeIcon
                     icon={faTwitter}
                     className="size-4 text-blue-900" />
-                  @kaptal_alex
+                  @yemmiemotara
                 </p>
               </Link>
             </div>
