@@ -6,12 +6,12 @@ import React from 'react'
 
 export default function Content() {
   return (
-    <section className='space-y-5 w-full px-4 sm:px-6'>
+    <section className='space-y-5 w-full'>
         <div className="md:flex justify-between items-center space-y-3">
                 <div>
                     <p className="text-gray-500 text-xl md:text-2xl">Manage your Projects</p>
                 </div>
-          <button className="bg-blue-950 cursor-pointer hover:bg-blue-900 text-white px-4 py-2 rounded-lg text-sm">+ Add Event</button>
+          <button className="bg-blue-950 cursor-pointer hover:bg-blue-900 text-white px-4 py-2 rounded-lg text-sm">+ Add Project</button>
             </div>
 
         < div className='grid grid-cols-1 gap-6'>

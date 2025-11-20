@@ -35,11 +35,11 @@ export default function Content() {
             <div className="bg-white p-4 rounded-xl shadow">
               <div className="flex items-center mb-4 justify-between">
                 <div className="flex space-x-4">
-                  <div className="bg-blue-200 text-blue-950 rounded-full h-12 w-12 flex items-center justify-center font-semibold">
+                  <div className="rounded-full h-12 w-12 flex items-center justify-center font-semibold">
                     <Image src="/alex.jpg" alt=""
                       width={10000000}
                       height={0}
-                      className="rounded-full h-12 w-12" />
+                      className="rounded-full h-9 md:h-12 w-10 md:w-12" />
                   </div>
                   <div>
                     <h2 className="font-bold text-black">Alexander Akosile O.</h2>
@@ -102,11 +102,11 @@ export default function Content() {
             <div className="bg-white p-4 rounded-xl shadow">
               <div className="flex items-center mb-4 justify-between">
                 <div className="flex space-x-4">
-                  <div className="bg-blue-200 text-blue-950 rounded-full h-12 w-12 flex items-center justify-center font-semibold">
+                  <div className="rounded-full h-12 w-12 flex items-center justify-center font-semibold">
                     <Image src="/praise2.jpg" alt=""
                       width={10000000}
                       height={0}
-                      className="rounded-full h-12 w-12" />
+                      className="rounded-full h-9 md:h-12 w-10 md:w-12" />
                   </div>
                   <div>
                     <h2 className="font-bold text-black">Adeogun Praise E.</h2>
@@ -154,12 +154,12 @@ export default function Content() {
                   />{" "}
                   (+234) 91617 84554
                 </p>
-                <Link href="https://x.com/kaptal_alex?t=gFaKBZpDgfBcqc1F_ftw2A&s=08">
+                <Link href="https://www.linkedin.com/in/praise-adeogun-a008b72a6">
                   <p className="flex gap-1.5 items-center hover:underline ">
                     <FontAwesomeIcon
-                      icon={faTwitter}
+                      icon={faLinkedin}
                       className="size-4 text-blue-900" />
-                    @kaptal_alex
+                    @Praise Adeogun
                   </p>
                 </Link>
               </div>
@@ -170,11 +170,11 @@ export default function Content() {
             <div className="bg-white p-4 rounded-xl shadow">
               <div className="flex items-center mb-4 justify-between">
                 <div className="flex space-x-4">
-                  <div className="bg-blue-200 text-blue-950 rounded-full h-12 w-12 flex items-center justify-center font-semibold">
+                  <div className="rounded-full h-12 w-12 flex items-center justify-center font-semibold">
                     <Image src="/samuel.jpg" alt=""
                       width={10000000}
                       height={0}
-                      className="rounded-full h-12 w-12" />
+                      className="rounded-full h-9 md:h-12 w-10 md:w-12" />
                   </div>
                   <div>
                     <h2 className="font-bold text-black">Samuel Okpokam D.</h2>
@@ -207,13 +207,13 @@ export default function Content() {
               <div className="text-sm text-gray-600 space-y-1">
                 <p className="flex gap-1.5 items-center hover:underline">
                   <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacnewtondewizard.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacnewtondewizard@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex gap-1.5 items-center"
                   >
                     <FontAwesomeIcon icon={faEnvelope} className="size-4 text-blue-900" />
-                    isaacnewtondewizard.com
+                    isaacnewtondewizard@gmail.com
                   </a>
                 </p>
                 <p className="flex gap-1.5 items-center">
@@ -237,11 +237,11 @@ export default function Content() {
             <div className="bg-white p-4 rounded-xl shadow">
               <div className="flex items-center mb-4 justify-between">
                 <div className="flex space-x-4">
-                  <div className="bg-blue-200 text-blue-950 rounded-full h-12 w-12 flex items-center justify-center font-semibold">
+                  <div className="rounded-full h-12 w-12 flex items-center justify-center font-semibold">
                     <Image src="/haliyah.jpg" alt=""
                       width={10000000}
                       height={0}
-                      className="rounded-full h-12 w-12" />
+                      className="rounded-full h-9 md:h-12 w-10 md:w-12" />
                   </div>
                   <div>
                     <h2 className="font-bold text-black">Onatade Haliyah O.</h2>
@@ -306,14 +306,14 @@ export default function Content() {
           <div className="bg-white p-4 rounded-xl shadow">
             <div className="flex items-center mb-4 justify-between">
               <div className="flex space-x-4">
-                <div className="bg-blue-200 text-blue-950 rounded-full h-12 w-12 flex items-center justify-center font-semibold">
+                  <div className="rounded-full h-12 w-12 flex items-center justify-center font-semibold">
                   <Image src="/farouq.jpg" alt=""
                     width={10000000}
                     height={0}
-                    className="rounded-full h-12 w-12" />
+                      className="rounded-full h-9 md:h-12 w-10 md:w-12" />
                 </div>
                 <div>
-                  <h2 className="font-bold text-black">Olatunde U.Farouq</h2>
+                  <h2 className="font-bold text-black">Olatunde U. Farouq</h2>
                   <p className="text-sm text-blue-600">Member</p>
                 </div>
               </div>
@@ -374,14 +374,14 @@ export default function Content() {
           <div className="bg-white p-4 rounded-xl shadow">
             <div className="flex items-center mb-4 justify-between">
               <div className="flex space-x-4">
-                <div className="bg-blue-200 text-blue-950 rounded-full h-12 w-12 flex items-center justify-center font-semibold">
-                  <Image src="/praise2.jpg" alt=""
+                  <div className="rounded-full h-12 w-12 flex items-center justify-center font-semibold">
+                  <Image src="/seun.jpg" alt=""
                     width={10000000}
                     height={0}
-                    className="rounded-full h-12 w-12" />
+                      className="rounded-full h-9 md:h-12 w-10 md:w-12" />
                 </div>
                 <div>
-                  <h2 className="font-bold text-black">Ajibade Oluwaseun</h2>
+                  <h2 className="font-bold text-black">Ajibade O. Favour</h2>
                   <p className="text-sm text-blue-600">Member</p>
                 </div>
               </div>
@@ -427,12 +427,12 @@ export default function Content() {
                 />{" "}
                 (+234) 90234 82470
               </p>
-              <Link href="https://x.com/kaptal_alex?t=gFaKBZpDgfBcqc1F_ftw2A&s=08">
+              <Link href="https://www.linkedin.com/in/ajibade-oluwaseun-493970386?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
                 <p className="flex gap-1.5 items-center hover:underline ">
                   <FontAwesomeIcon
-                    icon={faTwitter}
+                    icon={faLinkedin}
                     className="size-4 text-blue-900" />
-                  @kaptal_alex
+                  @Ajibade Oluwaseun
                 </p>
               </Link>
             </div>

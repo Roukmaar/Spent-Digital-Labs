@@ -92,7 +92,7 @@ export default function userdashboard() {
     </aside>
 
       {/* Main Content */}
-    <main className="flex-1">
+    <main className="flex-1 ">
         {/* Header */}
         <header className="bg-white border-b border-gray-300 shadow-teal-100 shadow-xl ">
             <div className="px-5 py-2 md:py-3.5 flex justify-between">
@@ -126,13 +126,13 @@ export default function userdashboard() {
 
         {/* Dashboard Content */}
         <div className="p-8">
-            <div className="mb-8 flex items-center">
+            <div className="px-5 mb-8 flex items-center">
                 <h2  className='gap-1 flex text-4xl md:text-5xl font-semibold text-gray-800 py-2 mb-5'>Welcome back, Spirit!<FontAwesomeIcon icon={faCheckCircle} className="hidden md:flex md:size-10 text-teal-500 size-5" /></h2>
                 
             </div>
 
           {/* Stats Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
                     <div className="flex items-center justify-between">
                         <div>
@@ -179,7 +179,7 @@ export default function userdashboard() {
                     </div>
                 </div>
             </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="px-5 pb-5 grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Recent Publications */}
         <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
             <div className="md:flex items-center justify-between mb-4">

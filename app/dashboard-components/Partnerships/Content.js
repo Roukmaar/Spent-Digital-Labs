@@ -8,7 +8,7 @@ import React from "react";
 export default function Content() {
   return (
     <section className="">
-      <div className="min-h-screen px-3">
+      <div className="min-h-screen">
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-xl font-bold text-black">Partnership Inquiries</h1>
         </div>
@@ -27,7 +27,7 @@ export default function Content() {
           </select>
         </div>
 
-        <div className="rounded-xl p-4">
+        <div className="rounded-xl py-4">
           <h2 className="font-semibold text-lg text-black mb-4">All Inquiries (5)</h2>
           {/* Mobile: show cards */}
           <div className="md:hidden space-y-4">

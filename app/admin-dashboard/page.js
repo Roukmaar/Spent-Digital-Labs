@@ -11,12 +11,12 @@ import Events from './Events';
 
 export default function page() {
     return (
-        <main className="min-h-screen w-full bg-stone-100">
+        <main className="min-h-screen w-full bg-stone-100 pb-5">
             <div className="flex">
                 <Sidebar />
                 <div className="flex-1 flex flex-col">
                     <Header />
-                    <div className="p-6">
+                    <div className="px-5">
                         <h2 className='text-4xl md:text-5xl font-semibold text-gray-800 py-2 mb-5 mt-3'>Overview</h2>
                         <div className="">
                             <StatCard />

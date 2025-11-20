@@ -3,7 +3,7 @@ import React from 'react'
 export default function Content() {
   return (
 
-    <section className='space-y-5 w-full px-0'>
+    <section className='space-y-5 w-full'>
 
       <div className='grid grid-cols-1 gap-6'>
         <div className="md:flex justify-between items-center space-y-3">

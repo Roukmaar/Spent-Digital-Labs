@@ -14,7 +14,7 @@ export default function page() {
                 <div className="flex-1 flex flex-col">
                     <Header />
                     <div className="pt-12 px-5 md:px-10 pb-5 md:pb-10 w-full">
-                        <h2 className="text-4xl md:text-5xl font-semibold text-gray-800 mb-4 ml-3 md:ml-5">
+                        <h2 className="text-4xl md:text-5xl font-semibold text-gray-800 mb-4">
                             Teams
                         </h2>
                         {/* Add your main content for the Publications page here */}

@@ -14,7 +14,7 @@ export default function page() {
                 <div className="flex-1 flex flex-col">
                     <Header />
                     <div className="p-5 md:p-10 w-full">
-                        <h2 className='text-4xl md:text-5xl font-semibold text-gray-800 py-2 mb-5 mt-5 '>Publications</h2>
+                        <h2 className='text-4xl md:text-5xl font-semibold text-gray-800 py-2 mb-5'>Publications</h2>
                         {/* Add your main content for the Publications page here */}
                         <Content/>
 

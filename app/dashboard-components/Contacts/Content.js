@@ -1,11 +1,12 @@
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReply } from "@fortawesome/free-solid-svg-icons";
 
 export default function Content() {
     return (
         <section>
-            <div className="p-6">
+            <div className="py-6">
                 <p className="text-gray-600 mb-4">
                     Manage and respond to contact form submissions
                 </p>
@@ -40,7 +41,11 @@ export default function Content() {
                                 </span>
                                 <span>1/15/2024</span>
                             </div>
-                            <div className="space-x-2 pt-1">
+                            <div className=" flex space-x-2 pt-1">
+                                <FontAwesomeIcon
+                                    icon={faReply}
+                                    className="size-4 text-teal-600 hover:text-teal-800 cursor-pointer"
+                                />
                                 <FontAwesomeIcon
                                     icon={faTrashAlt}
                                     className="size-4 text-red-600 hover:text-red-400 cursor-pointer"
@@ -65,7 +70,11 @@ export default function Content() {
                                 </span>
                                 <span>1/15/2024</span>
                             </div>
-                            <div className="space-x-2 pt-1">
+                            <div className=" flex space-x-2 pt-1">
+                                <FontAwesomeIcon
+                                    icon={faReply}
+                                    className="size-4 text-teal-600 hover:text-teal-800 cursor-pointer"
+                                />
                                 <FontAwesomeIcon
                                     icon={faTrashAlt}
                                     className="size-4 text-red-600 hover:text-red-400 cursor-pointer"
@@ -88,7 +97,11 @@ export default function Content() {
                                 </span>
                                 <span>1/15/2024</span>
                             </div>
-                            <div className="space-x-2 pt-1">
+                            <div className=" flex space-x-2 pt-1">
+                                <FontAwesomeIcon
+                                    icon={faReply}
+                                    className="size-4 text-teal-600 hover:text-teal-800 cursor-pointer"
+                                />
                                 <FontAwesomeIcon
                                     icon={faTrashAlt}
                                     className="size-4 text-red-600 hover:text-red-400 cursor-pointer"
