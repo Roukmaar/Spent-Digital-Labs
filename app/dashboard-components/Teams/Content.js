@@ -375,7 +375,7 @@ export default function Content() {
             <div className="flex items-center mb-4 justify-between">
               <div className="flex space-x-4">
                   <div className="rounded-full h-12 w-12 flex items-center justify-center font-semibold">
-                  <Image src="/seun.jpg" alt=""
+                  <Image src="/Seun.jpg" alt=""
                     width={10000000}
                     height={0}
                       className="rounded-full h-9 md:h-12 w-10 md:w-12" />

@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,7 +16,7 @@ export default function HomePage() {
       setCurrentSlide((prev) => (prev + 1) % publications.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, );
 
 const handleNewsletterSubmit = async (e) => {
   e.preventDefault();
@@ -129,7 +132,7 @@ const handleNewsletterSubmit = async (e) => {
   return (
     <main className="overflow-x-hidden">
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-[#0A1F44] via-[#1A3A5C] to-[#0A1F44] text-white">
+      <section className="relative bg-linear-to-br from-[#0A1F44] via-[#1A3A5C] to-[#0A1F44] text-white">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-64 h-64 bg-[#00BFA6] rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#00BFA6] rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
@@ -243,11 +246,11 @@ const handleNewsletterSubmit = async (e) => {
 
           <div className="mt-12 grid md:grid-cols-2 gap-6">
             {innovationProjects.map((project, index) => (
-              <div key={index} className="rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+              <div key={index} className="rounded-xl bg-white p-6 shadow-md ring-1 ring-gray-200">
                 <div className="flex items-start justify-between mb-4">
                   <h4 className="text-xl font-semibold text-gray-900">{project.name}</h4>
                   <span
-                    className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium text-white bg-${project.statusColor}-600`}
+                    className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium text-black`}
                   >
                     {project.status}
                   </span>
@@ -269,7 +272,7 @@ const handleNewsletterSubmit = async (e) => {
       </section>
 
       {/* Education & Programs */}
-      <section className="bg-gradient-to-br from-[#1A3A5C] to-[#0A1F44] text-white">
+      <section className="bg-linear-to-br from-[#1A3A5C] to-[#0A1F44] text-white">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="text-center">
             <h2 className="text-2xl md:text-3xl font-bold">Education & Programs</h2>
@@ -313,7 +316,7 @@ const handleNewsletterSubmit = async (e) => {
           </div>
 
           <div className="relative mx-auto max-w-4xl mt-12">
-            <div className="overflow-hidden rounded-xl ring-1 ring-gray-200">
+            <div className="overflow-hidden rounded-xl border shadow-xl border-gray-200">
               <div
                 className="flex transition-transform duration-500 ease-out"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -324,11 +327,11 @@ const handleNewsletterSubmit = async (e) => {
                       <h4 className="text-lg md:text-xl font-semibold text-gray-900">{pub.title}</h4>
                       <div className="mt-3 flex items-center gap-4 text-sm text-gray-600 mb-4">
                         <span className="flex items-center gap-2">
-                          <span className="text-[#00BFA6]" aria-hidden>📝</span>
+                          <span className="text-[#515656]" aria-hidden><FontAwesomeIcon icon={faFileAlt}/></span>
                           {pub.author}
                         </span>
                         <span className="flex items-center gap-2">
-                          <span className="text-[#00BFA6]" aria-hidden>📅</span>
+                          <span className="text-[#00BFA6]" aria-hidden><FontAwesomeIcon icon={faCalendarAlt}/></span>
                           {new Date(pub.date).toLocaleDateString('en-US', {
                             year: 'numeric',
                             month: 'long',

@@ -3,6 +3,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faX } from '@fortawesome/free-solid-svg-icons';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
+
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -63,12 +72,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3 mt-4">
               {/* Example social link */}
-              <a href="https://twitter.com/blockchainresearch" target="_blank" rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 hover:bg-[#00BFA6] rounded-lg flex items-center justify-center transition">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253..." />
-                </svg>
-              </a>
+              
               {/* Add other socials here */}
 
 
@@ -79,12 +83,10 @@ export default function Footer() {
                   href="https://twitter.com/blockchainresearch"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-[#00BFA6] rounded-lg flex items-center justify-center transition"
+                  className="w-10 h-10 bg-white hover:bg-[#00BFA6] rounded-lg flex items-center justify-center transition"
                   aria-label="Twitter"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8.29 20.251c7.547 0 11.675-6.253..." />
-                  </svg>
+                <FontAwesomeIcon icon={faXTwitter} className='size-7 text-black'/>
                 </a>
 
                 {/* LinkedIn */}
@@ -92,12 +94,11 @@ export default function Footer() {
                   href="https://linkedin.com/company/blockchainresearch"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-[#00BFA6] rounded-lg flex items-center justify-center transition"
+                  className="w-10 h-10 bg-white hover:bg-[#00BFA6] rounded-lg flex items-center justify-center transition"
                   aria-label="LinkedIn"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 0h-14c-2.761 0-5 2.239..." />
-                  </svg>
+                <FontAwesomeIcon icon={faLinkedin} className='size-7 text-blue-900'/>
+
                 </a>
 
                 {/* GitHub */}
@@ -105,12 +106,11 @@ export default function Footer() {
                   href="https://github.com/blockchainresearch"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-[#00BFA6] rounded-lg flex items-center justify-center transition"
+                  className="w-10 h-10 bg-white hover:bg-[#00BFA6] hover:text-black rounded-lg flex items-center justify-center transition"
                   aria-label="GitHub"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484..." clipRule="evenodd" />
-                  </svg>
+                <FontAwesomeIcon icon={faGithub} className='size-7 text-black hover:text-black'/>
+
                 </a>
 
                 {/* YouTube */}
@@ -118,12 +118,11 @@ export default function Footer() {
                   href="https://youtube.com/@blockchainresearch"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-[#00BFA6] rounded-lg flex items-center justify-center transition"
+                  className="w-10 h-10 bg-white hover:bg-[#00BFA6] rounded-lg flex items-center justify-center transition"
                   aria-label="YouTube"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0..." />
-                  </svg>
+                  <FontAwesomeIcon icon={faYoutube} className='size-7 text-red-500'/>
+
                 </a>
               </div>
 

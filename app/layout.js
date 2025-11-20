@@ -113,10 +113,7 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className="antialiased">
-        {/* Accessibility: Skip to main content */}
-        <a href="#main-content" className="skip-to-content">
-          Skip to main content
-        </a>
+      
 
         {/* Main Layout Structure */}
         <div className="flex flex-col min-h-screen">

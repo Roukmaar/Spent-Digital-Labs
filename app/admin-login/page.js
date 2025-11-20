@@ -10,10 +10,10 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Page() {
   return (
-    <main className="font-sans font-bold bg-blue-950 h-screen flex justify-center items-center">
-      <div className="w-95 md:w-120 bg-white flex flex-col justify-center items-center py-7 rounded-2xl space-y-3 shadow-2xl md:shadow-blue-500">
-        <div className="bg-blue-950 w-20 rounded-2xl">
-          <FontAwesomeIcon icon={faFlask} className="text-sm text-white px-5 py-5" />
+    <main className="font-sans font-bold bg-[#0A1F44] h-screen flex justify-center items-center">
+      <div className="w-95 md:w-120 bg-white flex flex-col justify-center items-center py-7 rounded-2xl space-y-3 shadow-2xl shadow-blue-500">
+        <div className="bg-blue-950 w-20 rounded-2xl flex items-center">
+          <FontAwesomeIcon icon={faFlask} className="text-4xl text-white px-5 py-5" />
         </div>
         <h2 className="text-blue-950 text-xl">Spent Digital Labs</h2>
         <span className="text-gray-500 text-sm">Admin Portal Access</span>
@@ -25,7 +25,7 @@ export default function Page() {
           />
           <FontAwesomeIcon
             icon={faEnvelope}
-            className="relative -top-9.5 md:left-91 left-78  text-gray-400 size-5 pointer-events-none"
+            className="relative -top-9.5 md:left-88 left-78  text-gray-400 size-5 pointer-events-none"
           />
           <label className="font-medium text-black">Password</label>
           <input type="email"
@@ -35,7 +35,7 @@ export default function Page() {
           <span className="text-gray-400 text-xs font-medium">Password must have 12+ characters with letters, numbers and symbols.</span>
           <FontAwesomeIcon
             icon={faEye}
-            className="relative -top-19.5 md:-top-15.5 md:left-91 left-78  text-gray-400 size-5 pointer-events-none"
+            className="relative -top-19.5 md:-top-15.5 md:left-88 left-78  text-gray-400 size-5 pointer-events-none"
           />
           <div className="flex justify-between">
             <div className="flex space-x-0.5">
