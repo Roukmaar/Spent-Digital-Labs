@@ -56,7 +56,7 @@ const handleNewsletterSubmit = async (e) => {
         </svg>
       ),
       title: 'DeFi & Financial Inclusion',
-      description: 'Exploring decentralized finance solutions for underserved communities.',
+      description: 'Exploring decentralized finance solutions for under-served communities.',
     },
     {
       icon: (
@@ -96,7 +96,7 @@ const handleNewsletterSubmit = async (e) => {
 
   const programs = [
     { name: 'Blockchain Research Fellowship', duration: '6 Months', description: 'Intensive research program for emerging blockchain scholars.', link: '/education#fellowship' },
-    { name: 'Web3 Developer Bootcamp', duration: '12 Weeks', description: 'Hands-on training in smart contract development and dApp building.', link: '/education#bootcamp' },
+    { name: 'Web3 Developer BootCamp', duration: '12 Weeks', description: 'Hands-on training in smart contract development and dApp building.', link: '/education#bootcamp' },
     { name: 'Policy & Governance Masterclass', duration: '8 Weeks', description: 'Executive program on blockchain regulation and policy frameworks.', link: '/education#policy' },
     { name: 'Applied Blockchain Workshop', duration: '4 Weeks', description: 'Industry-specific blockchain implementation workshops.', link: '/education#workshop' },
   ];
@@ -415,7 +415,7 @@ const handleNewsletterSubmit = async (e) => {
       </section>
 
       {/* Newsletter */}
-      <section className="bg-gradient-to-br from-[#0A1F44] to-[#1A3A5C] text-white">
+      <section className="bg-linear-to-br from-[#0A1F44] to-[#1A3A5C] text-white">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Join the Blockchain Research Revolution</h2>
