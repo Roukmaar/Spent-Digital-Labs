@@ -184,10 +184,12 @@ export default function userdashboard() {
         <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
             <div className="md:flex items-center justify-between mb-4">
                 <h3 className="text-lg font-semibold text-gray-800">Recent Publications</h3>
+                <Link href="/user-dashboard/Publications">
                 <button className="px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-lg text-sm font-medium transition flex items-center gap-2">
                     <FontAwesomeIcon icon={faPlus}className="w-4 h-4" />
                     New Publication
                 </button>
+                </Link>
             </div>
             <hr className='w-full text-gray-300 py-3 pt-3'/>
             <div className="space-y-4">

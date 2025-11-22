@@ -381,7 +381,7 @@ export default function Content() {
                   <label className="block text-sm font-medium text-gray-700 mb-1">
                     Bio
                   </label>
-                  <input
+                  <textarea
                     value={bio}
                     onChange={(e) => setBio(e.target.value)}
                     type="text"

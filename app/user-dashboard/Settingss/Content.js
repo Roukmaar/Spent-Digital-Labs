@@ -209,7 +209,7 @@ export default function Content() {
           <div className="md:flex space-y-3 gap-4 mb-6">
             <button
               onClick={() => setActiveTab("profile")}
-              className={`px-4 py-2 rounded-lg shadow flex items-center gap-2 ${
+              className={`px-4 py-2 rounded-lg shadow flex items-center gap-2  cursor-pointer ${
                 activeTab === "profile"
                   ? "bg-teal-600 text-white"
                   : "bg-white text-black"
@@ -220,7 +220,7 @@ export default function Content() {
 
             <button
               onClick={() => setActiveTab("settings")}
-              className={`px-4 py-2 rounded-lg shadow flex items-center gap-2 ${
+              className={`px-4 py-2 rounded-lg shadow flex items-center gap-2  cursor-pointer ${
                 activeTab === "settings"
                   ? "bg-teal-600 text-white"
                   : "bg-white text-black"
@@ -381,7 +381,7 @@ export default function Content() {
                   <label className="block text-sm font-medium text-gray-700 mb-1">
                     Bio
                   </label>
-                  <input
+                  <textarea
                     value={bio}
                     onChange={(e) => setBio(e.target.value)}
                     type="text"

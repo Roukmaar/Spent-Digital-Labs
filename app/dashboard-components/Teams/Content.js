@@ -265,7 +265,7 @@ export default function Content() {
           <div className="flex gap-2">
             <button 
               onClick={() => setIsTeamModalOpen(true)}
-              className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg text-sm"
+              className="bg-blue-950 hover:bg-blue-900 text-white px-4 py-2 rounded-lg text-sm"
             >
               + Add Team
             </button>
