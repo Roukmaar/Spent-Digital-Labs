@@ -4,6 +4,7 @@ import { faEdit } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import AddPublicationModal from './AddPublicationModal'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 export default function Content() {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -182,6 +183,10 @@ export default function Content() {
                                         icon={faTrashAlt} 
                                         className='w-4 h-4 text-red-600 hover:text-red-400 cursor-pointer'
                                         onClick={() => handleDelete(pub.id)}
+                                    />
+                                    <FontAwesomeIcon
+                                        icon={faDownload}
+                                        className='w-4 h-4 text-teal-600 hover:text-teal-800 cursor-pointer'
                                     />
                                 </div>
                             </div>
