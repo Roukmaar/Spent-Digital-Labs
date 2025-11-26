@@ -188,7 +188,7 @@ export default function InnovationLab() {
                 <div className="absolute inset-0 bg-linear-to-r from-teal-500 via-blue-600 to-purple-600 opacity-40 blur-3xl animate-[pulse_6s_infinite]"></div>
                 <div className="relative z-10 flex flex-col items-center gap-4 px-6">
                     <div className="flex items-center gap-3">
-                        <FontAwesomeIcon icon={faLightbulb} className="text-amber-500 text-4xl md:text-5xl" />
+                        <FontAwesomeIcon icon={faLightbulb} className="text-white text-4xl md:text-5xl" />
                         <h1 className="text-5xl md:text-6xl font-extrabold text-white">Innovation Lab</h1>
                     </div>
                     <p className="text-gray-200 max-w-2xl mx-auto mt-2 md:text-xl">
@@ -209,7 +209,7 @@ export default function InnovationLab() {
                             className="flex-1 px-4 py-2 rounded-full outline-none"
                             aria-label="Email address"
                         />
-                        <button type="submit" className="bg-teal-500 text-white px-4 py-2 rounded-full font-medium">
+                        <button type="submit" className="bg-teal-500 text-white px-2 py-1 rounded-full font-medium">
                             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                             Join
                         </button>
@@ -392,8 +392,8 @@ export default function InnovationLab() {
                     {/* Footer newsletter */}
                     <div className="mt-6 max-w-xl mx-auto">
                         <form onSubmit={handleNewsletterSubmit} className="flex gap-2 bg-gray-100 rounded-full p-1" aria-label="Footer newsletter signup">
-                            <input name="email" type="email" required placeholder="Your email" className="flex-1 px-4 py-2 rounded-full bg-white outline-none" />
-                            <button type="submit" className="bg-teal-500 text-white px-4 py-2 rounded-full">Join</button>
+                            <input name="email" type="email" required placeholder="Your email" className="flex-1 px-2 py-1 rounded-full bg-white outline-none" />
+                            <button type="submit" className="bg-teal-500 text-white px-4 py-1 rounded-full">Join</button>
                         </form>
                         {newsletterStatus && <p className="text-sm text-gray-600 mt-2">{newsletterStatus}</p>}
                     </div>
