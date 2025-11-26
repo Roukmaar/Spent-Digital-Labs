@@ -36,10 +36,10 @@ export default function Header() {
       ]
     },
     { name: 'Research', href: '/research' },
-    { name: 'Innovation Lab', href: '/innovation-lab' },
+    { name: 'Innovation Lab', href: '/Innovation-Lab' },
     { name: 'Education', href: '/education' },
     { name: 'Publications', href: '/publications' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Contact', href: '/Contact' },
   ];
 
   const isActive = (href) => pathname === href || pathname.startsWith(href);

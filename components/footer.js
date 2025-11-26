@@ -30,18 +30,18 @@ export default function Footer() {
 
   const footerLinks = {
     about: [
-      { name: 'Who We Are', href: '/about#who-we-are' },
-      { name: 'Mission & Vision', href: '/about#mission-vision' },
-      { name: 'Leadership Team', href: '/about#team' },
-      { name: 'Partnerships', href: '/about#partnerships' },
+      { name: 'Who We Are', href: '/About#who-we-are' },
+      { name: 'Mission & Vision', href: '/About#mission-vision' },
+      { name: 'Leadership Team', href: '/About#team' },
+      { name: 'Partnerships', href: ' /Contact#partnership' },
       { name: 'Careers', href: '/careers' },
     ],
     research: [
       { name: 'Research Areas', href: '/research#areas' },
       { name: 'Publications', href: '/research#publications' },
-      { name: 'Innovation Lab', href: '/innovation-lab' },
+      { name: 'Innovation Lab', href: '/Innovation-Lab' },
       { name: 'Submit Research', href: '/research#submit' },
-      { name: 'Ongoing Projects', href: '/innovation-lab#projects' },
+      { name: 'Ongoing Projects', href: '/Innovation-Lab#projects' },
     ],
     education: [
       { name: 'Programs Overview', href: '/education' },
@@ -54,7 +54,7 @@ export default function Footer() {
       { name: 'Latest News', href: '/publications#news' },
       { name: 'Blog', href: '/publications#insights' },
       { name: 'Events', href: '/events' },
-      { name: 'Contact Us', href: '/contact' },
+      { name: 'Contact Us', href: '/Contact' },
       { name: 'FAQ', href: '/faq' },
     ],
   };
