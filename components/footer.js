@@ -189,8 +189,10 @@ export default function Footer() {
           </div>
           <div>
             <div className="font-semibold text-white mb-1">Phone</div>
-            <a href="tel:+2341234567890" className="hover:text-[#00BFA6]">+234 123 456 7890</a>
-          </div>
+<Link href="https://wa.me/2348142273966" className="flex gap-2">
+                  <span>WhatsApp:</span>
+                  <span className="hover:underline hover:text-teal-500 transition ease-in-out">+234 814 227 3966</span>
+                </Link>          </div>
         </div>
       </div>
 

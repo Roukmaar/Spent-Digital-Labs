@@ -298,12 +298,12 @@ export default function InnovationLab() {
                     <h2 className="text-2xl md:text-4xl font-bold text-blue-950 text-center">Meet the Team</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         {[
-                            { name: "Dr. Amina Khan", role: "Cryptography Lead", img: "/team1.jpg" },
-                            { name: "Jean Dupont", role: "Protocol Engineer", img: "/team2.jpg" },
-                            { name: "Maria Lopez", role: "Research Strategist", img: "/team3.jpg" },
+                            { name: "Dr. Amina Khan", role: "Cryptography Lead", img: "/team2.jpg" },
+                            { name: "Raji Roqeeb", role: "Protocol Engineer", img: "/raji.jpeg" },
+                            { name: "Maria Lopez", role: "Research Strategist", img: "/expert2.jpg" },
                         ].map((member, i) => (
                             <div key={i} className="p-6 rounded-xl shadow-md bg-white">
-                                <div className="mx-auto mb-3 relative w-24 h-24">
+                                <div className="mx-auto mb-3 relative w-28 h-35">
                                     <Image src={member.img} alt={member.name} fill className="rounded-full object-cover" />
                                 </div>
                                 <h3 className="font-semibold text-lg text-blue-950">{member.name}</h3>
