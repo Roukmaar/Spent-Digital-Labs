@@ -391,8 +391,8 @@ export default function InnovationLab() {
 
                     {/* Footer newsletter */}
                     <div className="mt-6 max-w-xl mx-auto">
-                        <form onSubmit={handleNewsletterSubmit} className="flex gap-2 bg-gray-100 rounded-full p-1" aria-label="Footer newsletter signup">
-                            <input name="email" type="email" required placeholder="Your email" className="flex-1 px-2 py-1 rounded-full bg-white outline-none" />
+                        <form onSubmit={handleNewsletterSubmit} className="flex gap-2 rounded-full p-1 items-center justify-center" aria-label="Footer newsletter signup">
+                            <input name="email" type="email" required placeholder="Your email" className="flex-1 px-2 py-2 rounded-full bg-slate-100" />
                             <button type="submit" className="bg-teal-500 text-white px-4 py-1 rounded-full">Join</button>
                         </form>
                         {newsletterStatus && <p className="text-sm text-gray-600 mt-2">{newsletterStatus}</p>}
