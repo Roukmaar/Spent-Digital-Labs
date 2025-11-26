@@ -23,16 +23,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faFlaskVial } from "@fortawesome/free-solid-svg-icons";
 
-/**
- * Blockchain-focused Innovation Lab page with:
- * - Animated hero + newsletter (Formspree)
- * - Highlights, principles, stories, team (uses next/image)
- * - "What the Lab is Cooking" blockchain projects (modal details, progress bars)
- * - Live demo embeds
- * - CTA with Link
- *
- * Replace images and demo URLs as needed.
- */
 
 const PROJECTS = [
     {
@@ -152,7 +142,7 @@ function ProjectModal({ project, onClose }) {
                             href={project.demo}
                             target="_blank"
                             rel="noreferrer"
-                            className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-500 to-blue-600 text-white px-4 py-2 rounded-md shadow"
+                            className="inline-flex items-center gap-2 bg-linear-to-r from-teal-500 to-blue-600 text-white px-4 py-2 rounded-md shadow"
                         >
                             <FontAwesomeIcon icon={faPlayCircle} />
                             Live Demo
