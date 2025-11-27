@@ -29,13 +29,16 @@ const handleSubmit = async (e) => {
         ? process.env.NEXT_PUBLIC_API_BASE_URL_PROD
         : process.env.NEXT_PUBLIC_API_BASE_URL;
 
+    // ✅ Add this line to check the URL
+    console.log("API URL:", API_URL);
+
     const res = await axios.post(
       `${API_URL}/api/auth/register`,
       { email, password },
       {
         headers: { "Content-Type": "application/json" },
         withCredentials: false,
-        timeout: 20000, // give backend time to wake up
+        timeout: 20000,
       }
     );
 
@@ -48,6 +51,7 @@ const handleSubmit = async (e) => {
     setStatus(err.response?.data?.message || "Something went wrong");
   }
 };
+
 
 
 
