@@ -66,9 +66,9 @@ export default function Contact() {
         <section aria-labelledby="contact-section-heading" className="space-y-6">
           <h2 id="contact-section-heading" className="sr-only">Contact and Partnership forms</h2>
 
-          <div className="grid gap-6 pt-5">
+          <div className="grid gap-6 ml-3 pt-5">
             {/* General Contact Container */}
-            <div className="bg-slate-100 mx-5 p-6 rounded-xl shadow-sm">
+            <div className="bg-slate-100 p-6 rounded-xl shadow-sm">
               <h3 className="text-lg font-semibold text-blue-950 mb-2">General Contact</h3>
               <p className="text-gray-600 text-sm mb-4">Questions, feedback, or general inquiries.</p>
 
@@ -115,14 +115,14 @@ export default function Contact() {
                 <p>Email: contact@spentlabs.com</p>
                 <Link href="https://wa.me/2348142273966" className="flex gap-2">
                   <span>WhatsApp:</span>
-                  <span className="underline hover:text-teal-500 transition ease-in-out">+234 814 227 3966</span>
+                  <span className="hover:underline hover:text-teal-500 transition ease-in-out">+234 814 227 3966</span>
                 </Link>
                 <p>Location: Ondo State, Nigeria</p>
               </div>
             </div>
 
             {/* Partnership Container */}
-            <div className="bg-stone-100 p-6 mx-5 rounded-xl shadow-sm border border-gray-100" id="partnership" aria-labelledby="partnership-heading">
+            <div className="bg-stone-100 p-6 rounded-xl shadow-sm border border-gray-100" id="partnership" aria-labelledby="partnership-heading">
               <h3 id="partnership-heading" className="text-lg font-semibold text-blue-950 mb-2">Partnership Inquiry</h3>
               <p className="text-gray-600 text-sm mb-4">
                 We partner with academic groups, industry teams, and community projects. Tell us about your organization and goals.

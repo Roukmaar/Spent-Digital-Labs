@@ -133,10 +133,10 @@ export default function PublicationsGridPage() {
               <option value="title-asc">Title: A → Z</option>
             </select>
 
-            <div className="hidden sm:flex items-center gap-2">
+            <div className="items-center gap-2">
               <button
                 onClick={() => { setActiveTag(""); setQuery(""); }}
-                className={`px-3 py-2 rounded-lg text-sm ${activeTag === "" ? "bg-teal-600 text-white" : "bg-slate-800 text-slate-100"}`}
+                className={`px-3 py-2 rounded-lg text-sm ${activeTag === "" ? "bg-teal-600 text-white" : "bg-slate-700 text-slate-100"}`}
               >
                 All
               </button>

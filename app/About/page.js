@@ -193,7 +193,7 @@ export default function About() {
           Looking ahead, we aim to expand our research fellowship programs, launch new innovation labs across Africa, and influence
           blockchain policy frameworks that foster sustainable growth.
         </p>
-        <Link href="/contact" className="inline-block px-6 py-3 bg-[#00BFA6] text-white font-semibold rounded-lg shadow hover:bg-teal-600 transition">
+        <Link href="/Contact#partnership" className="inline-block px-6 py-3 bg-[#00BFA6] text-white font-semibold rounded-lg shadow hover:bg-teal-600 transition">
           Partner With Us
         </Link>
       </section>
@@ -298,7 +298,7 @@ export default function About() {
         <p className="max-w-2xl mx-auto mb-6 md:text-xl">
           Whether you’re a researcher, developer, or policymaker, there’s a place for you in our community. Let’s build the future of blockchain together.
         </p>
-        <Link href="/contact" className="inline-block px-6 py-3 bg-white text-[#00BFA6] font-semibold rounded-lg shadow hover:bg-gray-100 transition">
+        <Link href="/Contact" className="inline-block px-6 py-3 bg-white text-[#00BFA6] font-semibold rounded-lg shadow hover:bg-gray-100 transition">
           Get Involved
         </Link>
       </section>

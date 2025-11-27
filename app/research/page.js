@@ -746,7 +746,7 @@ export default function ResearchPage() {
       {/* Collaborative Research CTA */}
       <section
         id="submit"
-        className="py-16 md:py-24 bg-gradient-to-br from-[#0A1F44] to-[#1A3A5C] text-white"
+        className="py-16 md:py-24 bg-linear-to-br from-[#0A1F44] to-[#1A3A5C] text-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
@@ -760,7 +760,7 @@ export default function ResearchPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/contact?subject=research-proposal"
+                href="/Contact?subject=research-proposal"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#00BFA6] text-white font-medium rounded-lg hover:bg-[#009688] transition-colors shadow-lg"
               >
                 Propose a Research Topic

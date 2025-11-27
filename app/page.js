@@ -264,7 +264,7 @@ const handleNewsletterSubmit = async (e) => {
           </div>
 
           <div className="mt-10 text-center">
-            <Link href="/innovation-lab" className="inline-flex items-center justify-center rounded-md bg-[#00BFA6] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#00a790] transition">
+            <Link href="/Innovation-Lab" className="inline-flex items-center justify-center rounded-md bg-[#00BFA6] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#00a790] transition">
               View Innovation Projects
             </Link>
           </div>
@@ -403,10 +403,10 @@ const handleNewsletterSubmit = async (e) => {
               Join forces with leading blockchain researchers, innovators, and educators. Together, we can shape Africa’s blockchain future.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-flex items-center justify-center rounded-md bg-[#00BFA6] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#00a790] transition">
+              <Link href="/Contact#partnership" className="inline-flex items-center justify-center rounded-md bg-[#00BFA6] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#00a790] transition">
                 Become a Partner
               </Link>
-              <Link href="/about#partnerships" className="inline-flex items-center justify-center rounded-md border border-gray-300 px-5 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-50 transition">
+              <Link href="/Contact" className="inline-flex items-center justify-center rounded-md border border-gray-300 px-5 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-50 transition">
                 Learn About Partnerships
               </Link>
             </div>

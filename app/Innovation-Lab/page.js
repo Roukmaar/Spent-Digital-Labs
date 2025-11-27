@@ -383,7 +383,7 @@ export default function InnovationLab() {
                             <FontAwesomeIcon icon={faHandshake} />
                             Collaborate
                         </Link>
-                        <Link href="/Contact" className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 inline-flex items-center gap-2">
+                        <Link href="/Contact" className="bg-blue-800 text-white px-6 py-3 rounded-md hover:bg-blue-700 inline-flex items-center gap-2">
                             <FontAwesomeIcon icon={faCoins} />
                             Support Us
                         </Link>
@@ -392,8 +392,8 @@ export default function InnovationLab() {
                     {/* Footer newsletter */}
                     <div className="mt-6 max-w-xl mx-auto">
                         <form onSubmit={handleNewsletterSubmit} className="flex gap-2 rounded-full p-1 items-center justify-center" aria-label="Footer newsletter signup">
-                            <input name="email" type="email" required placeholder="Your email" className="flex-1 px-2 py-2 rounded-full bg-slate-100" />
-                            <button type="submit" className="bg-teal-500 text-white px-4 py-1 rounded-full">Join</button>
+                            <input name="email" type="email" required placeholder="Your email" className="placeholder:pl-3 flex-1 px-2 py-2 rounded-full bg-slate-100" />
+                            <button type="submit" className="bg-teal-500 text-white px-4 py-2 rounded-full">Join</button>
                         </form>
                         {newsletterStatus && <p className="text-sm text-gray-600 mt-2">{newsletterStatus}</p>}
                     </div>
