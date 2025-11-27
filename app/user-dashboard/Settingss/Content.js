@@ -17,11 +17,11 @@ export default function Content() {
   const [profilePic, setProfilePic] = useState(null);
   const [fullName, setFullName] = useState("Spirit Phillips");
   const [username, setUsername] = useState("spiritphillips");
-  const [email, setEmail] = useState("admin@spenddigitallab.com");
-  const [role, setRole] = useState("Administrator");
+  const [email, setEmail] = useState("Youremali@spenddigitallab.com");
+  const [role, setRole] = useState("User");
   const [phone, setPhone] = useState("+1 234 567 8900");
   const [bio, setBio] = useState(
-    "Managing the Spent Digital Lab admin dashboard"
+    "User at Spent Digital Labs"
   );
   const [links, setLinks] = useState({ linkedin: "", github: "", twitter: "" });
 
