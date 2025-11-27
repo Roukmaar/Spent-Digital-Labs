@@ -21,16 +21,21 @@ export default function NewUser() {
   const [status, setStatus] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
- const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
   e.preventDefault();
   try {
+    const API_URL =
+      process.env.NODE_ENV === "production"
+        ? process.env.NEXT_PUBLIC_API_BASE_URL_PROD
+        : process.env.NEXT_PUBLIC_API_BASE_URL;
+
     const res = await axios.post(
-      "https://spent-digital-lab-backend.onrender.com/api/auth/register",
-      { email, password }, // payload
+      `${API_URL}/api/auth/register`,
+      { email, password },
       {
-        headers: { "Content-Type": "application/json" }, // axios config
-        withCredentials: false, // set true if backend uses cookies
-        timeout: 5000, // optional: fail after 5s if no response
+        headers: { "Content-Type": "application/json" },
+        withCredentials: false,
+        timeout: 20000, // give backend time to wake up
       }
     );
 
@@ -43,6 +48,7 @@ export default function NewUser() {
     setStatus(err.response?.data?.message || "Something went wrong");
   }
 };
+
 
 
   return (
