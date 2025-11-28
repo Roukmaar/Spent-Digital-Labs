@@ -4,7 +4,15 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFlask, faEnvelope, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFlask,
+  faEnvelope,
+  faEye,
+  faEyeSlash,
+  faCheckCircle,
+  faTimesCircle,
+  faSpinner,
+} from "@fortawesome/free-solid-svg-icons";
 import { faGoogle, faGithub } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
 
@@ -14,10 +22,14 @@ export default function UserLogin() {
   const [password, setPassword] = useState("");
   const [status, setStatus] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [rememberMe, setRememberMe] = useState(false); // ✅ new state
+  const [rememberMe, setRememberMe] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("");
+    setLoading(true); // << start spinner here
+
     try {
       const res = await axios.post(
         "https://spent-digital-lab-backend.onrender.com/api/auth/login",
@@ -36,8 +48,12 @@ export default function UserLogin() {
       router.push("/user-dashboard");
     } catch (err) {
       setStatus(err.response?.data?.message || "Login failed");
+    } finally {
+      setLoading(false); // << always stop spinner
     }
   };
+
+  const isSuccess = status.toLowerCase().includes("successful") || status.toLowerCase().includes("welcome");
 
   return (
     <main className="font-sans font-bold bg-[#0A1F44] h-screen flex justify-center items-center">
@@ -49,7 +65,6 @@ export default function UserLogin() {
         <span className="text-gray-500 text-sm">User Portal Access</span>
 
         <form className="flex flex-col space-y-4 px-5 w-full" onSubmit={handleSubmit}>
-          {/* Email input */}
           <label className="font-medium text-black">Email Address</label>
           <div className="relative w-full">
             <input
@@ -58,6 +73,7 @@ export default function UserLogin() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full rounded-xl border border-gray-300 px-3 py-2 pr-10 focus:outline-none focus:border-teal-500 placeholder-gray-400 placeholder:text-base placeholder:font-medium"
+              required
             />
             <FontAwesomeIcon
               icon={faEnvelope}
@@ -65,7 +81,6 @@ export default function UserLogin() {
             />
           </div>
 
-          {/* Password input */}
           <label className="font-medium text-black">Password</label>
           <div className="relative w-full">
             <input
@@ -74,6 +89,7 @@ export default function UserLogin() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full rounded-xl border border-gray-300 px-3 py-2 pr-10 focus:outline-none focus:border-teal-500 placeholder-gray-400 placeholder:text-base placeholder:font-medium"
+              required
             />
             <FontAwesomeIcon
               icon={showPassword ? faEyeSlash : faEye}
@@ -82,7 +98,6 @@ export default function UserLogin() {
             />
           </div>
 
-          {/* Remember Me + Forgot Password */}
           <div className="flex justify-between items-center text-sm">
             <label className="flex items-center gap-2 text-gray-700 cursor-pointer">
               <input
@@ -94,25 +109,43 @@ export default function UserLogin() {
               Remember Me
             </label>
             <Link href="/forgot-password">
-              <span className="text-teal-500 hover:underline cursor-pointer">
-                Forgot Password?
-              </span>
+              <span className="text-teal-500 hover:underline cursor-pointer">Forgot Password?</span>
             </Link>
           </div>
 
-          <button type="submit" className="w-full bg-teal-500 text-white rounded-md h-10 hover:bg-teal-600">
-            Sign In
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full bg-teal-500 text-white rounded-md h-10 hover:bg-teal-600 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+          >
+            {loading ? (
+              <>
+                <FontAwesomeIcon icon={faSpinner} spin />
+                <span>Signing In...</span>
+              </>
+            ) : (
+              "Sign In"
+            )}
           </button>
         </form>
 
-        {status && <p className="text-sm text-red-500">{status}</p>}
+        {status && (
+          <div
+            className={`flex items-center gap-2 text-sm font-bold px-3 py-2 rounded-md transition-all duration-400 ease-out transform ${
+              isSuccess ? "text-green-600 bg-green-100" : "text-red-600 bg-red-100"
+            }`}
+          >
+            <FontAwesomeIcon
+              icon={isSuccess ? faCheckCircle : faTimesCircle}
+              className={isSuccess ? "text-green-600" : "text-red-600"}
+            />
+            <span>{status}</span>
+          </div>
+        )}
 
-        {/* Social login */}
         <div className="flex py-3">
           <hr className="w-30 md:w-34 text-gray-300" />
-          <span className="font-medium text-gray-400 text-sm -my-2 px-2">
-            Or continue with
-          </span>
+          <span className="font-medium text-gray-400 text-sm -my-2 px-2">Or continue with</span>
           <hr className="w-30 md:w-34 text-gray-300" />
         </div>
         <div className="flex gap-5">
@@ -133,9 +166,7 @@ export default function UserLogin() {
         <span className="flex text-gray-400 text-sm font-medium -my-2">
           Admin?
           <Link href="/admin-login">
-            <h2 className="font-medium text-sm text-teal-500 hover:underline">
-              Login here
-            </h2>
+            <h2 className="font-medium text-sm text-teal-500 hover:underline">Login here</h2>
           </Link>
         </span>
       </div>

@@ -249,7 +249,7 @@ export default function AddPublicationModal({ isOpen, onClose, onSubmit }) {
                         <button
                             type="submit"
                             disabled={isSubmitting}
-                            className={`w-full sm:w-auto px-6 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition font-medium ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                            className={`w-full sm:w-auto px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition font-medium ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
                                 }`}
                         >
                             {isSubmitting ? 'Creating...' : 'Create Publication'}

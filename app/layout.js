@@ -1,6 +1,6 @@
 import { Inter, Manrope } from 'next/font/google';
 // import './globals.css';
-import './Fglobals.css';
+import './globals.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 

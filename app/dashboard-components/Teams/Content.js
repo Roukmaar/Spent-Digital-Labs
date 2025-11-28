@@ -528,7 +528,7 @@ export default function Content() {
                 </button>
                 <button
                   onClick={handleAddTeam}
-                  className="px-6 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition font-medium"
+                  className="px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition font-medium"
                 >
                   Create Team
                 </button>

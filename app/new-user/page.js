@@ -9,6 +9,9 @@ import {
   faEnvelope,
   faEye,
   faEyeSlash,
+  faCheckCircle,
+  faTimesCircle,
+  faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGoogle, faGithub } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
@@ -20,57 +23,46 @@ export default function NewUser() {
   const [password, setPassword] = useState("");
   const [status, setStatus] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false); // spinner state
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  try {
-    const API_URL =
-      process.env.NODE_ENV === "production"
-        ? process.env.NEXT_PUBLIC_API_BASE_URL_PROD
-        : process.env.NEXT_PUBLIC_API_BASE_URL;
+  // handleSubmit updated to include loading exactly like the login page
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("");
+    setLoading(true);
 
-    // ✅ Add this line to check the URL
-    console.log("API URL:", API_URL);
+    try {
+      const res = await axios.post(
+        "https://spent-digital-lab-backend.onrender.com/api/auth/register",
+        { email, password }
+      );
 
-    const res = await axios.post(
-      `${API_URL}/api/auth/register`,
-      { email, password },
-      {
-        headers: { "Content-Type": "application/json" },
-        withCredentials: false,
-        timeout: 20000,
-      }
-    );
+      setStatus("Registered successfully!");
+      setTimeout(() => {
+        router.push("/user-login");
+      }, 1500);
+    } catch (err) {
+      console.error("Registration error:", err.response?.data || err.message);
+      setStatus(err.response?.data?.message || "Registration failed");
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    setStatus("Registered successfully!");
-    setTimeout(() => {
-      router.push("/user-login");
-    }, 1500);
-  } catch (err) {
-    console.error("Registration error:", err.response?.data || err.message);
-    setStatus(err.response?.data?.message || "Something went wrong");
-  }
-};
-
-
-
+  const isSuccess =
+    status.toLowerCase().includes("registered") ||
+    status.toLowerCase().includes("success");
 
   return (
     <main className="font-sans font-bold bg-[#0A1F44] h-screen flex justify-center items-center">
       <div className="w-95 md:w-120 bg-white flex flex-col justify-center items-center py-7 rounded-2xl space-y-3 shadow-2xl shadow-cyan-800">
         <div className="bg-linear-to-br from-cyan-300 to-emerald-700 w-20 rounded-2xl flex items-center">
-          <FontAwesomeIcon
-            icon={faFlask}
-            className="text-4xl text-white px-5 py-5"
-          />
+          <FontAwesomeIcon icon={faFlask} className="text-4xl text-white px-5 py-5" />
         </div>
         <h2 className="text-blue-950 text-xl">Spent Digital Labs</h2>
         <span className="text-gray-500 text-sm">New User Registration</span>
 
-        <form
-          className="flex flex-col space-y-4 px-5 w-full"
-          onSubmit={handleSubmit}
-        >
+        <form className="flex flex-col space-y-4 px-5 w-full" onSubmit={handleSubmit}>
           <label className="font-medium text-black">Email Address</label>
           <div className="relative w-full">
             <input
@@ -110,46 +102,58 @@ const handleSubmit = async (e) => {
 
           <button
             type="submit"
-            className="w-full bg-teal-500 text-white rounded-md h-10 hover:bg-teal-600"
+            disabled={loading}
+            className="w-full bg-teal-500 text-white rounded-md h-10 hover:bg-teal-600 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
           >
-            Sign Up
+            {loading ? (
+              <>
+                <FontAwesomeIcon icon={faSpinner} spin />
+                <span>Signing Up...</span>
+              </>
+            ) : (
+              "Sign Up"
+            )}
           </button>
         </form>
 
-        {status && <p className="text-sm text-red-500">{status}</p>}
+        {status && (
+          <div
+            className={`flex items-center gap-2 text-sm font-bold px-3 py-2 rounded-md transition-all duration-400 ease-out transform ${
+              isSuccess ? "text-green-600 bg-green-100" : "text-red-600 bg-red-100"
+            }`}
+          >
+            <FontAwesomeIcon
+              icon={isSuccess ? faCheckCircle : faTimesCircle}
+              className={isSuccess ? "text-green-600" : "text-red-600"}
+            />
+            <span>{status}</span>
+          </div>
+        )}
 
         <div className="flex py-3">
           <hr className="w-30 md:w-34 text-gray-300" />
-          <span className="font-medium text-gray-400 text-sm -my-2 px-2">
-            Or continue with
-          </span>
+          <span className="font-medium text-gray-400 text-sm -my-2 px-2">Or continue with</span>
           <hr className="w-30 md:w-34 text-gray-300" />
         </div>
         <div className="flex gap-5">
           <button className="border border-gray-300 font-medium w-42 md:w-47 py-3 rounded-md flex justify-center items-center gap-2 hover:bg-teal-600 hover:text-white">
-            <FontAwesomeIcon icon={faGoogle} className="size-5 text-red-600" />
-            Google
+            <FontAwesomeIcon icon={faGoogle} className="size-5 text-red-600" /> Google
           </button>
           <button className="border border-gray-300 font-medium w-42 md:w-47 py-3 rounded-md flex justify-center items-center gap-2 hover:bg-teal-600 hover:text-white">
-            <FontAwesomeIcon icon={faGithub} className="size-5 text-black" />
-            Github
+            <FontAwesomeIcon icon={faGithub} className="size-5 text-black" /> Github
           </button>
         </div>
 
         <span className="flex text-gray-400 text-sm font-medium py-3">
           Already have an account?
           <Link href="/user-login">
-            <h2 className="font-medium text-sm text-teal-500 hover:underline">
-              Login as User
-            </h2>
+            <h2 className="font-medium text-sm text-teal-500 hover:underline">Login as User</h2>
           </Link>
         </span>
         <span className="flex text-gray-400 text-sm font-medium -my-2">
           Admin?
           <Link href="/admin-login">
-            <h2 className="font-medium text-sm text-teal-500 hover:underline">
-              Login here
-            </h2>
+            <h2 className="font-medium text-sm text-teal-500 hover:underline">Login here</h2>
           </Link>
         </span>
       </div>
