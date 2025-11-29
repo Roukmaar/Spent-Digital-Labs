@@ -241,7 +241,7 @@ export default function EducationPage() {
     return (
         <main className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative bg-gradient-to-br from-[#0A1F44] via-[#1A3A5C] to-[#0A1F44] text-white py-20 md:py-32">
+            <section className="relative bg-linear-to-br from-[#0A1F44] via-[#1A3A5C] to-[#0A1F44] text-white py-20 md:py-32">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-20 left-20 w-64 h-64 bg-[#00BFA6] rounded-full blur-3xl"></div>
                     <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#00BFA6] rounded-full blur-3xl"></div>
@@ -411,7 +411,7 @@ export default function EducationPage() {
                                         {/* Apply Button */}
                                         <button
                                             onClick={() => openApplyForm()}
-                                            className="block w-full text-center px-6 py-3 bg-gradient-to-r from-[#00BFA6] to-[#0A1F44] text-white font-medium rounded-lg hover:shadow-lg transition-all"
+                                            className="block w-full text-center px-6 py-3 bg-linear-to-r from-[#00BFA6] to-[#0A1F44] text-white font-medium rounded-lg hover:shadow-lg transition-all"
                                         >
                                             Apply for {program.name}
                                         </button>
@@ -521,7 +521,7 @@ export default function EducationPage() {
             </section>
 
             {/* TechXcellence Program */}
-            <section className="py-16 md:py-24 bg-gradient-to-br from-[#1A3A5C] to-[#0A1F44] text-white">
+            <section className="py-16 md:py-24 bg-linear-to-br from-[#1A3A5C] to-[#0A1F44] text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
@@ -617,27 +617,145 @@ export default function EducationPage() {
                             </ul>
                         </div>
 
+
+
+
+
+
+
+
                         {/* Certificate Preview */}
-                        <div className="bg-white rounded-xl p-8 shadow-xl border-4 border-[#00BFA6]/20">
-                            <div className="text-center flex flex-col items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width={100} height={100}>
-                                    <path d="M80 259.8L289.2 345.9C299 349.9 309.4 352 320 352C330.6 352 341 349.9 350.8 345.9L593.2 246.1C602.2 242.4 608 233.7 608 224C608 214.3 602.2 205.6 593.2 201.9L350.8 102.1C341 98.1 330.6 96 320 96C309.4 96 299 98.1 289.2 102.1L46.8 201.9C37.8 205.6 32 214.3 32 224L32 520C32 533.3 42.7 544 56 544C69.3 544 80 533.3 80 520L80 259.8zM128 331.5L128 448C128 501 214 544 320 544C426 544 512 501 512 448L512 331.4L369.1 390.3C353.5 396.7 336.9 400 320 400C303.1 400 286.5 396.7 270.9 390.3L128 331.4z" fill="#2C3E50" />
-                                </svg>
-                                <div className="text-sm text-[#7F8C8D] uppercase tracking-wider mb-2">Certificate of Completion</div>
-                                <h3 className="text-2xl font-bold text-[#0A1F44] mb-4">Blockchain Research Institute Africa</h3>
-                                <div className="h-px bg-[#ECF0F1] my-6"></div>
-                                <p className="text-[#2C3E50] text-sm mb-4">This certifies that</p>
-                                <p className="text-xl font-bold text-[#0A1F44] mb-4">[Your Name]</p>
-                                <p className="text-[#2C3E50] text-sm mb-6">has successfully completed the<br /><span className="font-semibold">[Program Name]</span></p>
-                                <div className="flex justify-center gap-8 text-xs text-[#7F8C8D]">
-                                    <div>
-                                        <div>Issue Date</div>
-                                        <div className="font-semibold text-[#0A1F44]">DD/MM/YYYY</div>
+                        <div className="relative">
+                            <div className="relative bg-white rounded-lg shadow-2xl overflow-hidden">
+                                {/* Diagonal Corner Designs */}
+                                <div className="absolute top-0 right-0 w-48 h-48 overflow-hidden">
+                                    <div className="absolute top-0 right-0 w-full h-full" style={{
+                                        background: 'linear-gradient(135deg, #00BFA6 0%, #61f9e5 50%, #00BFA6 100%)',
+                                        clipPath: 'polygon(100% 0, 100% 100%, 0 0)'
+                                    }}></div>
+                                    <div className="absolute top-8 right-0 w-full h-full" style={{
+                                        background: 'linear-gradient(135deg, rgba(10, 31, 68, 0.1) 0%, rgba(10, 31, 68, 0.05) 100%)',
+                                        clipPath: 'polygon(100% 0, 100% 100%, 20% 0)'
+                                    }}></div>
+                                </div>
+
+                                <div className="absolute bottom-0 left-0 w-48 h-48 overflow-hidden">
+                                    <div className="absolute bottom-0 left-0 w-full h-full" style={{
+                                        background: 'linear-gradient(135deg, #00BFA6 0%, #61f9e5 50%, #00BFA6 100%)',
+                                        clipPath: 'polygon(0 100%, 100% 100%, 0 0)'
+                                    }}></div>
+                                    <div className="absolute bottom-8 left-0 w-full h-full" style={{
+                                        background: 'linear-gradient(135deg, rgba(10, 31, 68, 0.05) 0%, rgba(10, 31, 68, 0.1) 100%)',
+                                        clipPath: 'polygon(0 100%, 80% 100%, 0 20%)'
+                                    }}></div>
+                                </div>
+
+                                {/* Watermark Laurel */}
+                                <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
+                                    <svg width="300" height="300" viewBox="0 0 200 200" fill="none">
+                                        {/* Left branch */}
+                                        <path d="M60 100 Q50 80 55 60" stroke="#0A1F44" strokeWidth="3" fill="none" />
+                                        <ellipse cx="52" cy="70" rx="8" ry="3" fill="#0A1F44" transform="rotate(-30 52 70)" />
+                                        <ellipse cx="48" cy="80" rx="9" ry="3" fill="#0A1F44" transform="rotate(-35 48 80)" />
+                                        <ellipse cx="45" cy="90" rx="10" ry="3" fill="#0A1F44" transform="rotate(-40 45 90)" />
+
+                                        {/* Right branch */}
+                                        <path d="M140 100 Q150 80 145 60" stroke="#0A1F44" strokeWidth="3" fill="none" />
+                                        <ellipse cx="148" cy="70" rx="8" ry="3" fill="#0A1F44" transform="rotate(30 148 70)" />
+                                        <ellipse cx="152" cy="80" rx="9" ry="3" fill="#0A1F44" transform="rotate(35 152 80)" />
+                                        <ellipse cx="155" cy="90" rx="10" ry="3" fill="#0A1F44" transform="rotate(40 155 90)" />
+
+                                        {/* Bottom branches */}
+                                        <path d="M60 100 Q50 120 55 140" stroke="#0A1F44" strokeWidth="3" fill="none" />
+                                        <ellipse cx="52" cy="110" rx="8" ry="3" fill="#0A1F44" transform="rotate(-30 52 110)" />
+                                        <ellipse cx="48" cy="120" rx="9" ry="3" fill="#0A1F44" transform="rotate(-35 48 120)" />
+                                        <ellipse cx="45" cy="130" rx="10" ry="3" fill="#0A1F44" transform="rotate(-40 45 130)" />
+
+                                        <path d="M140 100 Q150 120 145 140" stroke="#0A1F44" strokeWidth="3" fill="none" />
+                                        <ellipse cx="148" cy="110" rx="8" ry="3" fill="#0A1F44" transform="rotate(30 148 110)" />
+                                        <ellipse cx="152" cy="120" rx="9" ry="3" fill="#0A1F44" transform="rotate(35 152 120)" />
+                                        <ellipse cx="155" cy="130" rx="10" ry="3" fill="#0A1F44" transform="rotate(40 155 130)" />
+                                    </svg>
+                                </div>
+
+                                {/* Certificate Content */}
+                                <div className="relative z-10 p-10">
+                                    {/* Header */}
+                                    <div className="text-center mb-5">
+                                        <h1 className="text-5xl font-bold text-[#0a4443] mb-2" style={{ fontFamily: 'Georgia, serif' }}>
+                                            Certificate
+                                        </h1>
+                                        <div className="flex items-center justify-center gap-3 mb-2">
+                                            <div className="w-10 h-0.5 bg-[#a3aab2]"></div>
+                                            <p className="text-xl tracking-[0.3em] text-[#00BFA6] font-semibold uppercase">
+                                                of completion
+                                            </p>
+                                            <div className="w-10 h-0.5 bg-[#a3aab2]"></div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <div>Certificate ID</div>
-                                        <div className="font-semibold text-[#0A1F44]">BRIA-XXXX</div>
+
+                                    {/* Body */}
+                                    <div className="text-center mb-5">
+                                        <p className="text-sm text-[#2C3E50] mb-4">
+                                            This certificate is awarded to:
+                                        </p>
+
+                                        <h2 className="text-4xl font-bold mb-6 italic mt-10" style={{
+                                            background: 'linear-gradient(135deg, #00BFA6 0%, #61f9e5 100%)',
+                                            WebkitBackgroundClip: 'text',
+                                            WebkitTextFillColor: 'transparent',
+                                            fontFamily: 'Playfair Display, Georgia, serif'
+                                        }}>
+                                            Dr. Alexander Akosile
+                                        </h2>
+
+                                        <div className="h-0.5 w-65 bg-[#a3aab2] mx-auto mb-6"></div>
+
+                                        <p className="text-sm text-[#2C3E50] leading-relaxed max-w-md mx-auto mb-3">
+                                            has successfully completed the distinguished professional training in
+                                        </p>
+
+                                        <p className="text-xl font-bold text-[#556176] mb-3">
+                                            Blockchain Development Program
+                                        </p>
+
+                                        <p className="text-xs text-[#7F8C8D] leading-relaxed max-w-lg mx-auto">
+                                            Demonstrating exceptional proficiency in blockchain technology,<br />
+                                            smart contract development, and decentralized application architecture
+                                        </p>
+                                        <div className="text-center mt-15">
+                                            <div className="h-0.5 w-35 bg-[#a3aab2] mx-auto mb-2"></div>
+                                            <p className="text-sm font-semibold text-[#00BFA6] uppercase tracking-wider">Spirit Phillip</p>
+                                            <p className="text-xs text-[#7F8C8D] tracking-wide">Director</p>
+                                        </div>
                                     </div>
+
+                                    {/* Signature Section with Medal */}
+                                    <div className="flex items-center justify-between mt-10 px-8">
+                                        {/* Left Signature */}
+                                        <div className="mb-3">
+                                            <p className="text-[10px] text-[#7F8C8D] uppercase tracking-widest mb-1">Issue Date</p>
+                                            <p className="text-xs font-medium text-[#0A1F44]">DD/MM/YYYY</p>
+                                        </div>
+
+                                        {/* Center Medal */}
+                                        <div className="relative">
+                                            <div className="w-24 h-24 rounded-full border-[#0A1F44] bg-white flex items-center justify-center shadow-lg">
+                                                <Image src="/icons8-laurel-wreath-50 (1).png" alt='' width={100} height={0} className='w-25 h-25'/>
+                                            </div>
+                                        </div>
+
+                                        {/* Right - Date & ID */}
+                                        <div className="text-center">
+
+                                            <div>
+                                                <p className="text-[10px] text-[#7F8C8D] uppercase tracking-widest mb-1">Certificate ID</p>
+                                                <p className="text-xs font-mono font-medium text-[#0A1F44]">BRIA-2025-001</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
