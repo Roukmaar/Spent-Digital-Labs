@@ -683,7 +683,7 @@ export default function EducationPage() {
 
                                         {/* Center Medal */}
                                         <div className="relative md:-top-15">
-                                            <div className="w-16 h-16 md:w-30 md:h-30 rounded-full border-[#0A1F44] bg-white flex items-center justify-center shadow-lg">
+                                            <div className="w-25 h-22 md:w-30 md:h-30 rounded-full border-[#0A1F44] bg-white flex items-center justify-center shadow-lg">
                                                 <Image src="/elevate-white-logo.png" alt='' width={10000} height={40} className='md:m-10 w-20h-4 md:h-10 md:w-100' />
                                             </div>
                                         </div>
