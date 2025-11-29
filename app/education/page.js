@@ -635,7 +635,7 @@ export default function EducationPage() {
                                     }}></div>
                                     <div className="absolute top-8 right-0 w-full h-full" style={{
                                         background: 'linear-gradient(135deg, rgba(10, 31, 68, 0.1) 0%, rgba(10, 31, 68, 0.05) 100%)',
-                                        clipPath: 'polygon(100% 0, 100% 100%, 20% 0)'
+                                        clipPath: 'polygon(100% 0, 100% 100%, 0 0)'
                                     }}></div>
                                 </div>
 
@@ -645,8 +645,8 @@ export default function EducationPage() {
                                         clipPath: 'polygon(0 100%, 100% 100%, 0 0)'
                                     }}></div>
                                     <div className="absolute bottom-8 left-0 w-full h-full" style={{
-                                        background: 'linear-gradient(135deg, rgba(10, 31, 68, 0.05) 0%, rgba(10, 31, 68, 0.1) 100%)',
-                                        clipPath: 'polygon(0 100%, 80% 100%, 0 20%)'
+                                        background: 'linear-gradient(135deg, rgba(10, 31, 68, 0.1) 0%, rgba(10, 31, 68, 0.05) 100%)',
+                                        clipPath: 'polygon(0 100%, 100% 100%, 0 0)'
                                     }}></div>
                                 </div>
 
@@ -679,7 +679,7 @@ export default function EducationPage() {
                                 </div>
 
                                 {/* Certificate Content */}
-                                <div className="relative z-10 p-10">
+                                <div className="relative z-10 p-10 mt-10">
                                     {/* Header */}
                                     <div className="text-center mb-5">
                                         <h1 className="text-5xl font-bold text-[#0a4443] mb-2" style={{ fontFamily: 'Georgia, serif' }}>
@@ -731,7 +731,7 @@ export default function EducationPage() {
                                     </div>
 
                                     {/* Signature Section with Medal */}
-                                    <div className="flex items-center justify-between mt-10 px-8">
+                                    <div className="flex items-center justify-between mt-20 px-8">
                                         {/* Left Signature */}
                                         <div className="mb-3">
                                             <p className="text-[10px] text-[#7F8C8D] uppercase tracking-widest mb-1">Issue Date</p>
@@ -739,9 +739,13 @@ export default function EducationPage() {
                                         </div>
 
                                         {/* Center Medal */}
-                                        <div className="relative">
-                                            <div className="w-24 h-24 rounded-full border-[#0A1F44] bg-white flex items-center justify-center shadow-lg">
-                                                <Image src="/icons8-laurel-wreath-50 (1).png" alt='' width={100} height={0} className='w-25 h-25'/>
+                                        <div className="relative -top-15">
+                                            <div className="w-30 h-30 rounded-full border-[#0A1F44] bg-white flex items-center justify-center shadow-lg">
+                                                
+                                                
+                                                <Image src="/elevate-white-logo.png" alt='' width={10000} height={10} className='m-10 h-10'/>
+                                                
+                                                
                                             </div>
                                         </div>
 
