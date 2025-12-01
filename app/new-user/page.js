@@ -97,7 +97,7 @@ export default function NewUser() {
           </div>
 
           <span className="text-gray-400 text-xs font-medium">
-            Password must have 12+ characters with letters, numbers and symbols.
+            Password must have 8+ characters with letters, numbers and symbols.
           </span>
 
           <button
