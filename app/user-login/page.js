@@ -102,7 +102,7 @@ export default function UserLogin() {
           </div>
 
           <div className="flex space-x-1 justify-between items-center text-sm">
-            <label className="flex items-center gap-2 cursor-pointer font-medium text-sm text-gray-400">
+            <label className="flex items-center gap-1 cursor-pointer font-medium text-sm text-gray-400">
               <input
                 type="checkbox"
                 checked={rememberMe}
