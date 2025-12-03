@@ -182,7 +182,7 @@ export default function InnovationLab() {
     }
 
     return (
-        <main className="font-sans bg-[#0A1F44] min-h-screen flex flex-col items-center">
+        <main className="font-sans bg-[#0A1F44] min-h-1/3 flex flex-col items-center">
             {/* Hero with animated gradient */}
             <section className="relative w-full h-[56vh] flex flex-col justify-center items-center text-center overflow-hidden">
                 <div className="absolute inset-0 bg-linear-to-r from-teal-500 via-blue-600 to-purple-600 opacity-40 blur-3xl animate-[pulse_6s_infinite]"></div>

@@ -441,7 +441,7 @@ export default function EducationPage() {
                                 key={index}
                                 className="text-center p-6 rounded-xl hover:bg-[#ECF0F1] transition-colors"
                             >
-                                <div className="text-5xl mb-4">{approach.icon}</div>
+                                <div className="text-5xl mb-4 flex justify-center">{approach.icon}</div>
                                 <h3 className="text-xl font-bold text-[#0A1F44] mb-2">{approach.title}</h3>
                                 <p className="text-[#2C3E50] text-sm">{approach.description}</p>
                             </div>
@@ -466,7 +466,7 @@ export default function EducationPage() {
                         {enrollmentCategories.map((category, index) => (
                             <div
                                 key={index}
-                                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300"
+                                className="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition-all duration-300"
                             >
                                 <div className="text-5xl mb-4">{category.icon}</div>
                                 <h3 className="text-xl font-bold text-[#0A1F44] mb-2">{category.category}</h3>
@@ -504,7 +504,7 @@ export default function EducationPage() {
                         </p>
                     </div>
 
-                    <div className="max-w-3xl mx-auto">
+                    <div className="max-w-4xl mx-auto">
                         <div className="grid md:grid-cols-2 gap-4">
                             {expectedOutcomes.map((outcome, index) => (
                                 <div
@@ -512,7 +512,7 @@ export default function EducationPage() {
                                     className="flex items-start gap-3 p-4 bg-[#ECF0F1] rounded-lg hover:bg-[#00BFA6]/10 transition-colors"
                                 >
                                     <span className="text-[#00BFA6] text-2xl mt-1">✓</span>
-                                    <span className="text-[#2C3E50] font-medium">{outcome}</span>
+                                    <span className="text-[#2C3E50] font-medium mt-1">{outcome}</span>
                                 </div>
                             ))}
                         </div>
@@ -525,7 +525,7 @@ export default function EducationPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <div className="inline-block px-4 py-2 bg-white text-[#1A3A5C] text-sm font-semibold rounded-full mb-4">
+                            <div className="inline-block px-4 py-2 bg-white text-[#1A3A5C] text-sm md:text-lg font-semibold rounded-full mb-4">
                                 Flagship Student Event
                             </div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -553,7 +553,7 @@ export default function EducationPage() {
                                 </li>
                             </ul>
                             <Link
-                                href="/events/techxcellence"
+                                href="https://techxcellence.org/"
                                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#00BFA6] text-white font-medium rounded-lg hover:bg-[#009688] transition-colors shadow-lg"
                             >
                                 Learn More About TechXcellence
@@ -684,7 +684,7 @@ export default function EducationPage() {
                                         {/* Center Medal */}
                                         <div className="relative md:-top-15">
                                             <div className="w-25 h-22 md:w-30 md:h-30 rounded-full border-[#0A1F44] bg-white flex items-center justify-center shadow-lg">
-                                                <Image src="/elevate-white-logo.png" alt='' width={10000} height={40} className='md:m-10 w-20h-4 md:h-10 md:w-100' />
+                                                <Image src="/elevate-white-logo.png" alt='' width={10000} height={40} className='md:m-10 m-3 w-20h-4 md:h-10 md:w-100' />
                                             </div>
                                         </div>
 
@@ -752,7 +752,7 @@ export default function EducationPage() {
                                     }}
                                     className="p-4 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all text-left border border-white/20"
                                 >
-                                    <div className="text-2xl mb-2">{program.icon}</div>
+                                    <div className="text-2xl mb-2 flex justify-center">{program.icon}</div>
                                     <div className="font-semibold mb-1">{program.name}</div>
                                     <div className="text-sm text-[#0A1F44]">{program.duration} • {program.level}</div>
                                 </button>
@@ -822,7 +822,7 @@ export default function EducationPage() {
                                         className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-[#00BFA6] focus:border-[#00BFA6]"
                                     >
                                         <option>Blockchain Research Fellowship</option>
-                                        <option>Web3 Developer Bootcamp</option>
+                                        <option>Web3 Developer Boot-camp</option>
                                         <option>Policy & Governance Masterclass</option>
                                         <option>Applied Blockchain Workshop</option>
                                     </select>
@@ -865,7 +865,7 @@ export default function EducationPage() {
                         )}
 
                         <p className="text-sm mt-6">
-                            Questions? <Link href="/contact" className="text-[#00BFA6] hover:underline">Contact our admissions team</Link>
+                            Questions? <Link href="/Contact" className="text-[#00BFA6] hover:underline">Contact our admissions team</Link>
                         </p>
                     </div>
                 </div>

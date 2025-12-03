@@ -14,7 +14,7 @@ import { faExplosion } from '@fortawesome/free-solid-svg-icons';
 
 export default function About() {
   return (
-    <main className="bg-white text-gray-800">
+    <main className="min-h-screen bg-white text-gray-800">
       {/* Hero */}
       <section className="bg-linear-to-br from-[#1A3A5C] to-[#0A1F44] text-white py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">

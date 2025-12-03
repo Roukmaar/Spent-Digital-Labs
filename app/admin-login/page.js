@@ -32,7 +32,7 @@ export default function Page() {
             placeholder="Enter your password"
             className="placeholder:font-medium placeholder:text-gray-400 placeholder:pl-1 rounded-xl border border-gray-300 px-2 py-2 hover:border-blue-800 hover:cursor-pointer focus:outline-1 focus:border-blue-300"
           />
-          <span className="text-gray-400 text-xs font-medium">Password must have 12+ characters with letters, numbers and symbols.</span>
+          <span className="text-gray-400 text-xs font-medium">Password must have 8+ characters with letters, numbers and symbols.</span>
           <FontAwesomeIcon
             icon={faEye}
             className="relative -top-19.5 md:-top-15.5 md:left-88 left-78  text-gray-400 size-5 pointer-events-none"
@@ -41,7 +41,7 @@ export default function Page() {
             <div className="flex space-x-0.5">
               <input
                 type="checkbox" />
-              <span className="font-medium text-sm text-gray-400">Remember me for 30 days</span>
+              <span className="font-medium text-sm text-gray-400">Don't forget me</span>
             </div>
             <a className="font-medium text-sm text-blue-800 hover:text-blue-900 hover:cursor-pointer hover:underline">Forgot password?</a>
           </div>

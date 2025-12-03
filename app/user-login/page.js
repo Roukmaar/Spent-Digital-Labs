@@ -57,14 +57,14 @@ export default function UserLogin() {
 
   return (
     <main className="font-sans font-bold bg-[#0A1F44] h-screen flex justify-center items-center">
-      <div className="w-95 md:w-120 bg-white flex flex-col justify-center items-center py-7 rounded-2xl space-y-3 shadow-2xl shadow-cyan-800">
+      <div className="w-95 md:w-120 bg-white flex flex-col justify-center items-center py-7 rounded-2xl space-y-3 shadow-2xl shadow-teal-800 -mt-10">
         <div className="bg-linear-to-br from-cyan-300 to-emerald-700 w-20 rounded-2xl flex items-center">
           <FontAwesomeIcon icon={faFlask} className="text-4xl text-white px-5 py-5" />
         </div>
         <h2 className="text-blue-950 text-xl">Spent Digital Labs</h2>
         <span className="text-gray-500 text-sm">User Portal Access</span>
 
-        <form className="flex flex-col space-y-4 px-5 w-full" onSubmit={handleSubmit}>
+        <form className="flex flex-col space-y-4 px-10 w-full" onSubmit={handleSubmit}>
           <label className="font-medium text-black">Email Address</label>
           <div className="relative w-full">
             <input
@@ -94,21 +94,24 @@ export default function UserLogin() {
             <FontAwesomeIcon
               icon={showPassword ? faEyeSlash : faEye}
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 cursor-pointer"
+              className="absolute right-3 top-1/3 transform -translate-y-1/2 text-gray-400 cursor-pointer"
             />
+            <span className="text-gray-400 text-xs font-medium">
+            Password must have 8+ characters with letters, numbers and symbols.
+          </span>
           </div>
 
-          <div className="flex justify-between items-center text-sm">
-            <label className="flex items-center gap-2 text-gray-700 cursor-pointer">
+          <div className="flex space-x-1 justify-between items-center text-sm">
+            <label className="flex items-center gap-2 cursor-pointer font-medium text-sm text-gray-400">
               <input
                 type="checkbox"
                 checked={rememberMe}
                 onChange={() => setRememberMe(!rememberMe)}
                 className="cursor-pointer"
               />
-              Remember Me
+              Don't forget me
             </label>
-            <Link href="/forgot-password">
+            <Link href="">
               <span className="text-teal-500 hover:underline cursor-pointer">Forgot Password?</span>
             </Link>
           </div>
@@ -163,12 +166,12 @@ export default function UserLogin() {
             <h2 className="font-medium text-sm text-teal-500 hover:underline">Sign Up</h2>
           </Link>
         </span>
-        <span className="flex text-gray-400 text-sm font-medium -my-2">
+        {/* <span className="flex text-gray-400 text-sm font-medium -my-2">
           Admin?
           <Link href="/admin-login">
             <h2 className="font-medium text-sm text-teal-500 hover:underline">Login here</h2>
           </Link>
-        </span>
+        </span> */}
       </div>
     </main>
   );

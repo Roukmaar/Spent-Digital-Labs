@@ -220,7 +220,7 @@ export default function Contact() {
           {/* Optional full-width note or CTA below the two containers */}
           <div className="mt-2 text-center">
             <p className="text-sm text-gray-500">
-              Prefer to schedule a call instead? <Link href="/collaborate" className="text-teal-600 hover:underline">Book time with us</Link>.
+              Prefer to schedule a call instead? <Link href="https://wa.me/2348142273966" className="text-teal-600 hover:underline">Book time with us</Link>.
             </p>
           </div>
         </section>
