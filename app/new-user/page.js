@@ -151,7 +151,7 @@ export default function NewUser() {
         <span className="flex text-gray-400 text-sm font-medium py-3">
           Already have an account?
           <Link href="/user-login">
-            <h2 className="font-medium text-sm text-teal-500 hover:underline">Login as User</h2>
+            <h2 className="font-medium text-sm text-teal-500 hover:underline">Login Here</h2>
           </Link>
         </span>
         {/* <span className="flex text-gray-400 text-sm font-medium -my-2">

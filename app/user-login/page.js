@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,33 +25,51 @@ export default function UserLogin() {
   const [rememberMe, setRememberMe] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("");
-    setLoading(true); // << start spinner here
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setStatus("");
+  setLoading(true);
 
-    try {
-      const res = await axios.post(
-        "https://spent-digital-lab-backend.onrender.com/api/auth/login",
-        { email, password }
-      );
-      const token = res.data?.data?.token || res.data?.data?.taken;
-      if (!token) throw new Error("No token returned from API");
+  try {
+    const res = await axios.post(
+      "https://spent-digital-lab-backend.onrender.com/api/auth/login",
+      { email, password }
+    );
 
-      if (rememberMe) {
-        localStorage.setItem("spentlab_token", token);
-      } else {
-        sessionStorage.setItem("spentlab_token", token);
-      }
+    // ✅ Correct parsing based on Postman response
+    const { token, user } = res.data.data;
+    const role = user.role;
+    const message = res.data.message;
 
-      setStatus("Login successful!");
-      router.push("/user-dashboard");
-    } catch (err) {
-      setStatus(err.response?.data?.message || "Login failed");
-    } finally {
-      setLoading(false); // << always stop spinner
+    if (!token || !role) throw new Error("No token/role returned from API");
+
+    if (rememberMe) {
+      localStorage.setItem("spentlab_token", token);
+      localStorage.setItem("spentlab_role", role);
+    } else {
+      sessionStorage.setItem("spentlab_token", token);
+      sessionStorage.setItem("spentlab_role", role);
     }
-  };
+
+    setStatus(message || "Login successful!");
+
+    // Redirect based on role
+    if (role === "admin") {
+      router.push("/admin-dashboard");
+    } else {
+      router.push("/user-dashboard");
+    }
+  } catch (err) {
+    console.error("Login error:", err.response?.data || err.message);
+    setStatus(err.response?.data?.message || "Login failed");
+  } finally {
+    setLoading(false);
+  }
+};
+
+
+
+
 
   const isSuccess = status.toLowerCase().includes("successful") || status.toLowerCase().includes("welcome");
 
